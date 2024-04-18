@@ -19,8 +19,8 @@ const Navbar = () => {
               src={logo}
               alt="Design Build and Deploy Logo"
             />
-            <span className="text-sm text-white tracking-wide">
-              Design Build Deploy
+            <span className="text-[1.6rem] text-white font-logoFont tracking-wide">
+              design build deploy
             </span>
           </div>
           <ul className="hidden lg:flex ml-14 space-x-12 text-sm text-white">
@@ -31,7 +31,7 @@ const Navbar = () => {
           <div className="hidden lg:flex justify-center items-center space-x-12">
             <button
               type="button"
-              className="bg-yellow-400 px-5 py-1 text-center font-bold rounded-md cursor-pointer  2008"
+              className="bg-yellow-400 px-5 py-1 text-center font-bold rounded-md cursor-pointer hover:bg-yellow-500"
             >
               Download CV
             </button>
