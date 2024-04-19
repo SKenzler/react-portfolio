@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        logoFont: ['"Seaweed Script"', "cursive"],
+        logoFont: ['"Cedarville Cursive"', "cursive"],
       },
     },
   },

@@ -19,7 +19,7 @@ const Navbar = () => {
               src={logo}
               alt="Design Build and Deploy Logo"
             />
-            <span className="text-[1.6rem] text-white font-logoFont tracking-wide">
+            <span className="text-[1.5rem] text-white font-logoFont tracking-wide">
               design build deploy
             </span>
           </div>
