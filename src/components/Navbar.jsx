@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import logo from "../assets/design-build-deploy-logo.png";
 import { FaBars, FaXmark } from "react-icons/fa6";
+import { FaDownload, FaGithub } from "react-icons/fa";
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -31,8 +32,9 @@ const Navbar = () => {
           <div className="hidden lg:flex justify-center items-center space-x-12">
             <button
               type="button"
-              className="bg-yellow-400 px-5 py-1 text-center font-bold rounded-md cursor-pointer hover:bg-yellow-500"
+              className="bg-yellow-400 flex px-8 py-2 text-center gap-3 font-bold rounded-md cursor-pointer hover:scale-105"
             >
+              <FaDownload size={14} />
               Download CV
             </button>
           </div>
@@ -55,8 +57,9 @@ const Navbar = () => {
             </ul>
             <button
               type="button"
-              className="bg-yellow-400 px-5 py-1 text-center font-bold rounded-md cursor-pointer  2008"
+              className="bg-yellow-400 flex px-5 py-2 text-center gap-2 font-bold rounded-md cursor-pointer hover:bg-yellow-500"
             >
+              <FaDownload size={14} />
               Download CV
             </button>
           </div>
