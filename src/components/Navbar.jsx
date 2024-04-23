@@ -20,7 +20,7 @@ const Navbar = () => {
               src={logo}
               alt="Design Build and Deploy Logo"
             />
-            <span className="text-[1.5rem] text-white font-logoFont tracking-wide">
+            <span className="text-lg text-white font-logoFont tracking-wide">
               design build deploy
             </span>
           </div>
@@ -52,10 +52,10 @@ const Navbar = () => {
         {mobileMenuOpen && (
           <div className="fixed right-0 z-20 bg-neutral-900 w-full p-12 flex flex-col justify-center items-center lg:hidden">
             <ul className="text-sm text-center text-white p-2">
-              <li className="px-2 border-b-2 border-yellow-400">Home</li>
-              <li className="my-2">About</li>
-              <li className="my-2">Portfolio</li>
-              <li className="my-2">Contact</li>
+              <li className="py-2 border-b-2 border-yellow-400">Home</li>
+              <li className="py-2">About</li>
+              <li className="py-2">Portfolio</li>
+              <li className="py-2">Contact</li>
             </ul>
             <button
               type="button"

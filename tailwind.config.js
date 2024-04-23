@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        logoFont: ['"Cedarville Cursive"', "cursive"],
+        logoFont: ['"The Girl Next Door"', "cursive"],
       },
     },
   },
