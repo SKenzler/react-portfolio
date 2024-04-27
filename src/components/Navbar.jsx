@@ -20,8 +20,12 @@ const Navbar = () => {
               src={logo}
               alt="Design Build and Deploy Logo"
             />
-            <span className="text-lg text-white font-logoFont tracking-wide">
-              design build deploy
+            <span className="text-sm text-white tracking-wide">
+              design{" "}
+              <span className="text-yellow-400 font-semibold uppercase">
+                build
+              </span>{" "}
+              deploy
             </span>
           </div>
           <ul className="hidden lg:flex ml-14 space-x-12 text-sm text-white">
