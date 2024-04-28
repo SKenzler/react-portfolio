@@ -14,7 +14,7 @@ const Navbar = () => {
     <nav className="sticky top-0 z-50 py-3 backdrop-blur-lg border-b neutral-700/80">
       <div className="container px-4 mx-auto relative text-sm">
         <div className="flex justify-between items-center">
-          <div className="flex items-center flex-shrink-0">
+          <div className="flex items-center flex-shrink-0 cursor-pointer">
             <img
               className="h-16 w-16 mr-3"
               src={logo}
@@ -28,7 +28,7 @@ const Navbar = () => {
               deploy
             </span>
           </div>
-          <ul className="hidden lg:flex ml-14 space-x-12 text-sm text-white">
+          <ul className="hidden lg:flex ml-14 space-x-12 text-sm text-white cursor-pointer">
             <li className="px-2 border-b-2 border-yellow-400">Home</li>
             <li className="px-2">About</li>
             <li className="px-2">Portfolio</li>

@@ -29,16 +29,22 @@ const Home = () => {
         </div>
         <div className="flex justify-end items-center">
           <img
-            className="w-full object-fill shrink-0"
+            className="w-full object-fill flex-shrink-0"
             src={heroImage}
             alt="Profile Hero Image"
           />
         </div>
       </div>
-      <div className="flex justify-center items-center gap-4 m-5">
-        <FaGithub size={28} color="#C9C9C9" />
-        <BsLinkedin size={28} color="#C9C9C9" />
-        <FaCodepen size={28} color="#C9C9C9" />
+      <div className="flex justify-center items-center gap-8 m-5">
+        <div className="hover:scale-125 cursor-pointer">
+          <FaGithub size={28} color="#C9C9C9" />
+        </div>
+        <div className="hover:scale-125 cursor-pointer">
+          <BsLinkedin size={28} color="#C9C9C9" />
+        </div>
+        <div className="hover:scale-125 cursor-pointer">
+          <FaCodepen size={28} color="#C9C9C9" />
+        </div>
       </div>
     </>
   );
