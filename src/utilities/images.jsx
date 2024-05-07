@@ -5,7 +5,6 @@ import slideFour from "../assets/night-club.jpg";
 import slideFive from "../assets/Volume_Max.jpg";
 import slideSix from "../assets/racket-tennis-club.jpg";
 import slideSeven from "../assets/Design_Select.jpg";
-import slideEight from "../assets/Two-Five-One.jpg";
 
 const images = [
   slideOne,
@@ -15,7 +14,6 @@ const images = [
   slideFive,
   slideSix,
   slideSeven,
-  slideEight,
 ];
 
 export default images;
