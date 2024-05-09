@@ -5,6 +5,8 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const ProjectCarousel = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [slideOrder, setSlideOrder] = useState([0, 1, 2, 3, 4, 5, 6]);
+
   const slidePositions = [
     "center",
     "leftFirst",
@@ -29,6 +31,12 @@ const ProjectCarousel = ({ images }) => {
     setCurrentIndex((previousIndex) =>
       previousIndex + 1 === images.length ? 0 : previousIndex + 1
     );
+    setSlideOrder((previousIndexes) => {
+      const updateOrder = previousIndexes.map(
+        (previousIndex) => (previousIndex + 1) % 7
+      );
+    });
+    return updateOrder;
   };
 
   const handlePrevious = () => {
@@ -43,19 +51,19 @@ const ProjectCarousel = ({ images }) => {
 
   return (
     <div className="w-full h-screen bg-[#101824] flex flex-col justify-center items-center mt-5">
-      {images.map((item, index) => {
+      {images.map((item, index) => (
         <motion.img
           key={index}
           className="flex justify-center items-center w-5/6 sm:w-6/12 object-fill rounded-md p-2"
           src={item}
           alt={item}
           initial="center"
-          animate={slidePositions[currentIndex[index]]}
+          animate={slidePositions[slideOrder[index]]}
           variants={imageVariants}
           transition={{ duration: 0.5 }}
           style={{ width: "40%", position: "absolute" }}
-        />;
-      })}
+        />
+      ))}
 
       <div className="flex justify-center items-center text-[#C9C9C9] p-4">
         <div
