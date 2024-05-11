@@ -19,12 +19,12 @@ const ProjectCarousel = ({ images }) => {
 
   const imageVariants = {
     center: { x: "0%", scale: 1, zIndex: 5 },
-    leftFirst: { x: "-50%", scale: 0.7, zIndex: 4 },
-    leftSecond: { x: "-90%", scale: 0.5, zIndex: 3 },
-    leftThird: { x: "-100%", scale: 0.25, zIndex: 2 },
+    leftFirst: { x: "-50%", scale: 0.7, blur: 5, zIndex: 4 },
+    leftSecond: { x: "-80%", scale: 0.5, zIndex: 3 },
+    leftThird: { x: "-100%", scale: 0.4, zIndex: 2 },
     rightFirst: { x: "50%", scale: 0.7, zIndex: 4 },
-    rightSecond: { x: "90%", scale: 0.5, zIndex: 3 },
-    rightThird: { x: "100%", scale: 0.25, zIndex: 2 },
+    rightSecond: { x: "80%", scale: 0.5, zIndex: 3 },
+    rightThird: { x: "100%", scale: 0.4, zIndex: 2 },
   };
 
   const handleNext = () => {
@@ -35,8 +35,8 @@ const ProjectCarousel = ({ images }) => {
       const updateOrder = previousIndexes.map(
         (previousIndex) => (previousIndex + 1) % 7
       );
+      return updateOrder;
     });
-    return updateOrder;
   };
 
   const handlePrevious = () => {
@@ -50,22 +50,24 @@ const ProjectCarousel = ({ images }) => {
   };
 
   return (
-    <div className="w-full h-screen bg-[#101824] flex flex-col justify-center items-center mt-5">
-      {images.map((item, index) => (
-        <motion.img
-          key={index}
-          className="flex justify-center items-center w-5/6 sm:w-6/12 object-fill rounded-md p-2"
-          src={item}
-          alt={item}
-          initial="center"
-          animate={slidePositions[slideOrder[index]]}
-          variants={imageVariants}
-          transition={{ duration: 0.5 }}
-          style={{ width: "40%", position: "absolute" }}
-        />
-      ))}
+    <div className="w-full bg-[#101824] flex flex-col justify-center items-center p-2mt-5">
+      <AnimatePresence>
+        {images.map((item, index) => (
+          <motion.img
+            key={index}
+            className="flex justify-center items-center w-5/6 sm:w-6/12 object-fill rounded-md p-2"
+            src={item}
+            alt={item}
+            initial="center"
+            animate={slidePositions[slideOrder[index]]}
+            variants={imageVariants}
+            transition={{ duration: 0.5 }}
+            style={{ width: "40%", position: "absolute" }}
+          />
+        ))}
+      </AnimatePresence>
 
-      <div className="flex justify-center items-center text-[#C9C9C9] p-4">
+      <div className="flex translate-y-64 text-[#C9C9C9] p-4">
         <div
           className="hover:text-yellow-400 cursor-pointer"
           onClick={handlePrevious}

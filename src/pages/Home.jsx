@@ -2,7 +2,7 @@ import React from "react";
 import { FaGithub, FaCodepen } from "react-icons/fa";
 import { BsLinkedin } from "react-icons/bs";
 import heroImage from "../assets/hero-image.png";
-import { easeIn, easeInOut, motion } from "framer-motion";
+import { easeIn, motion } from "framer-motion";
 
 const Home = () => {
   return (
