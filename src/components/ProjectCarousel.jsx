@@ -12,14 +12,14 @@ const ProjectCarousel = ({ images }) => {
     "leftFirst",
     "leftSecond",
     "leftThird",
-    "rightFirst",
-    "rightSecond",
     "rightThird",
+    "rightSecond",
+    "rightFirst",
   ];
 
   const imageVariants = {
     center: { x: "0%", scale: 1, zIndex: 5 },
-    leftFirst: { x: "-50%", scale: 0.7, blur: 5, zIndex: 4 },
+    leftFirst: { x: "-50%", scale: 0.7, zIndex: 4 },
     leftSecond: { x: "-80%", scale: 0.5, zIndex: 3 },
     leftThird: { x: "-100%", scale: 0.4, zIndex: 2 },
     rightFirst: { x: "50%", scale: 0.7, zIndex: 4 },
@@ -28,25 +28,48 @@ const ProjectCarousel = ({ images }) => {
   };
 
   const handleNext = () => {
-    setCurrentIndex((previousIndex) =>
-      previousIndex + 1 === images.length ? 0 : previousIndex + 1
+    setCurrentIndex((index) =>
+      index === images.length - 1 ? (index = 0) : index + 1
     );
     setSlideOrder((previousIndexes) => {
-      const updateOrder = previousIndexes.map(
-        (previousIndex) => (previousIndex + 1) % 7
+      const updateOrder = previousIndexes.map((previousIndex) =>
+        previousIndex === images.length - 1
+          ? (previousIndex = 0)
+          : previousIndex + 1
       );
+      console.log(previousIndexes, updateOrder);
       return updateOrder;
     });
   };
 
   const handlePrevious = () => {
-    setCurrentIndex((previousIndex) =>
-      previousIndex - 1 < 0 ? images.length - 1 : previousIndex - 1
+    setCurrentIndex((index) =>
+      index - 1 < 0 ? (index = images.length - 1) : index - 1
     );
+    setSlideOrder((previousIndexes) => {
+      const updateOrder = previousIndexes.map((previousIndex) =>
+        previousIndex === 0
+          ? (previousIndex = images.length - 1)
+          : previousIndex - 1
+      );
+      console.log(previousIndexes, updateOrder);
+      return updateOrder;
+    });
   };
 
   const handleDotClick = (index) => {
     setCurrentIndex(index);
+    setSlideOrder((previousIndexes) => {
+      const updateOrder = previousIndexes.map((previousIndex) =>
+        previousIndex === index
+          ? (previousIndex = index)
+          : previousIndex === images.length - 1
+          ? (previousIndex = 0)
+          : (previousIndex = previousIndex + 1)
+      );
+      console.log(index, updateOrder);
+      return updateOrder;
+    });
   };
 
   return (
