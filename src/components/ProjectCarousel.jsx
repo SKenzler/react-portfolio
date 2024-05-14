@@ -60,14 +60,18 @@ const ProjectCarousel = ({ images }) => {
   const handleDotClick = (index) => {
     setCurrentIndex(index);
     setSlideOrder((previousIndexes) => {
-      const updateOrder = previousIndexes.map((previousIndex) =>
-        previousIndex === index
-          ? (previousIndex = index)
-          : previousIndex === images.length - 1
-          ? (previousIndex = 0)
-          : (previousIndex = previousIndex + 1)
-      );
-      console.log(index, updateOrder);
+      let imagesLength = images.length - 1;
+
+      const updateOrder = [
+        index,
+        index - imagesLength + 1,
+        index - imagesLength + 2,
+        index - imagesLength + 3,
+        index - imagesLength + 4,
+        index - imagesLength + 6,
+      ];
+
+      console.log(index, updateOrder, previousIndexes);
       return updateOrder;
     });
   };
