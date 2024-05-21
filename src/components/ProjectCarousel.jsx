@@ -64,11 +64,12 @@ const ProjectCarousel = ({ images }) => {
 
       const updateOrder = [
         index,
-        index - imagesLength + 1,
-        index - imagesLength + 2,
-        index - imagesLength + 3,
-        index - imagesLength + 4,
-        index - imagesLength + 6,
+        Math.floor((index + 1) % 7),
+        Math.floor((index + 2) % 7),
+        Math.floor((index + 3) % 7),
+        Math.floor((index + 4) % 7),
+        Math.floor((index + 5) % 7),
+        Math.floor((index + 6) % 7),
       ];
 
       console.log(index, updateOrder, previousIndexes);
