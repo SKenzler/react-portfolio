@@ -37,7 +37,6 @@ const ProjectCarousel = ({ images }) => {
           ? (previousIndex = 0)
           : previousIndex + 1
       );
-      console.log(previousIndexes, updateOrder);
       return updateOrder;
     });
   };
@@ -60,42 +59,40 @@ const ProjectCarousel = ({ images }) => {
   const handleDotClick = (index) => {
     setCurrentIndex(index);
     setSlideOrder((previousIndexes) => {
-      let imagesLength = images.length - 1;
+      let imagesLength = images.length;
 
       const updateOrder = [
         index,
-        Math.floor((index + 1) % 7),
-        Math.floor((index + 2) % 7),
-        Math.floor((index + 3) % 7),
-        Math.floor((index + 4) % 7),
-        Math.floor((index + 5) % 7),
-        Math.floor((index + 6) % 7),
+        Math.floor((index + (imagesLength - 6)) % 7),
+        Math.floor((index + (imagesLength - 5)) % 7),
+        Math.floor((index + (imagesLength - 4)) % 7),
+        Math.floor((index + (imagesLength - 3)) % 7),
+        Math.floor((index + (imagesLength - 2)) % 7),
+        Math.floor((index + (imagesLength - 1)) % 7),
       ];
-
-      console.log(index, updateOrder, previousIndexes);
       return updateOrder;
     });
   };
 
   return (
-    <div className="w-full bg-[#101824] flex flex-col justify-center items-center p-2mt-5">
+    <div className="w-full h-screen bg-[#101824] flex flex-col justify-center items-center">
       <AnimatePresence>
         {images.map((item, index) => (
           <motion.img
             key={index}
-            className="flex justify-center items-center w-5/6 sm:w-6/12 object-fill rounded-md p-2"
+            className="flex justify-center items-center w-[16em] sm:w-[30em] object-fill p-2 overflow-hidden"
             src={item}
             alt={item}
             initial="center"
             animate={slidePositions[slideOrder[index]]}
             variants={imageVariants}
-            transition={{ duration: 0.5 }}
-            style={{ width: "40%", position: "absolute" }}
+            transition={{ duration: 0.8 }}
+            style={{ position: "absolute" }}
           />
         ))}
       </AnimatePresence>
 
-      <div className="flex translate-y-64 text-[#C9C9C9] p-4">
+      <div className="flex absolute translate-y-32 sm:-translate-y-[-210px] text-[#C9C9C9] p-4">
         <div
           className="hover:text-yellow-400 cursor-pointer"
           onClick={handlePrevious}
