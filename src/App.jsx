@@ -3,6 +3,7 @@ import ProjectCarousel from "./components/ProjectCarousel";
 import Home from "./pages/Home";
 import images from "./utilities/images";
 import FlipCard from "./components/FlipCard";
+import cards from "./utilities/cards";
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
       <Navbar />
       <Home />
       <ProjectCarousel images={images} />
-      <FlipCard />
+      <FlipCard cards={cards} />
     </>
   );
 }

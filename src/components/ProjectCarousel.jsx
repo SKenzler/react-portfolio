@@ -58,7 +58,7 @@ const ProjectCarousel = ({ images }) => {
 
   const handleDotClick = (index) => {
     setCurrentIndex(index);
-    setSlideOrder((previousIndexes) => {
+    setSlideOrder(() => {
       let imagesLength = images.length;
 
       const updateOrder = [
