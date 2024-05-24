@@ -2,11 +2,11 @@ import React from "react";
 
 const FlipCard = ({ cards }) => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-2">
+    <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 min-h-screen gap-2">
       {cards.map((item) => (
         <div
           key={item.id}
-          className="flex flex-col min-h-screen justify-center items-center"
+          className="flex flex-col justify-center items-center p-4"
         >
           <div className="group h-80 w-64 [perspective:1000px]">
             <div className="relative h-full w-full rounded-xl shadow-xl transition-all duration-1000 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">

@@ -80,7 +80,7 @@ const ProjectCarousel = ({ images }) => {
         {images.map((item, index) => (
           <motion.img
             key={index}
-            className="flex justify-center items-center w-[16em] sm:w-[30em] object-fill p-2 overflow-hidden"
+            className="flex justify-center items-center w-[22em] sm:w-[30em] object-fill p-2  overflow-x-hidden"
             src={item}
             alt={item}
             initial="center"
@@ -92,7 +92,7 @@ const ProjectCarousel = ({ images }) => {
         ))}
       </AnimatePresence>
 
-      <div className="flex absolute translate-y-32 sm:-translate-y-[-210px] text-[#C9C9C9] p-4">
+      <div className="flex absolute translate-y-36 sm:-translate-y-[-210px] text-[#C9C9C9] p-4">
         <div
           className="hover:text-yellow-400 cursor-pointer"
           onClick={handlePrevious}
