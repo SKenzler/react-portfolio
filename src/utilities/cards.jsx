@@ -14,6 +14,7 @@ const cards = [
     content:
       "An interactive To-Do List that dynamically populates as the user adds tasks. Additionlly, a user can edit and delete a task.",
     icon: <FaGithub size={42} />,
+    path: "https://github.com/SKenzler/react-to-do-list",
   },
   {
     id: Date.now().toString(36) + Math.random().toString(36),

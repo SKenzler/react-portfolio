@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const FlipCard = ({ cards }) => {
   return (
@@ -27,7 +28,7 @@ const FlipCard = ({ cards }) => {
                     type="button"
                     className="text-yellow-400 hover:text-[#C9C9C9] p-4"
                   >
-                    {item.icon}
+                    <Link to={item.path}>{item.icon}</Link>
                   </button>
                 </div>
               </div>
