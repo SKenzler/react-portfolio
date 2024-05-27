@@ -3,10 +3,12 @@ import { FaGithub, FaCodepen } from "react-icons/fa";
 import { BsLinkedin } from "react-icons/bs";
 import heroImage from "../assets/hero-image.png";
 import { easeIn, motion } from "framer-motion";
+import Navbar from "../components/Navbar";
 
 const Home = () => {
   return (
     <>
+      <Navbar />
       <div className="flex flex-col md:flex-row justify-center items-center text-center ">
         <motion.div
           className="w-3/4 flex flex-col justify-center items-center text-[#C9C9C9] mt-5 p-5"

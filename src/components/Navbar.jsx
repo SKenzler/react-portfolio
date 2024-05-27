@@ -3,6 +3,7 @@ import { useState } from "react";
 import logo from "../assets/design-build-deploy-logo.png";
 import { FaBars, FaXmark } from "react-icons/fa6";
 import { FaDownload, FaGithub } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -29,10 +30,18 @@ const Navbar = () => {
             </span>
           </div>
           <ul className="hidden lg:flex ml-14 space-x-12 text-sm text-white cursor-pointer">
-            <li className="px-2 border-b-2 border-yellow-400">Home</li>
-            <li className="px-2">About</li>
-            <li className="px-2">Portfolio</li>
-            <li className="px-2">Contact</li>
+            <Link to="/">
+              <li className="px-2 border-b-2 border-yellow-400">Home</li>
+            </Link>
+            <Link to="/about">
+              <li className="px-2">About</li>
+            </Link>
+            <Link to="/projects">
+              <li className="px-2">Portfolio</li>
+            </Link>
+            <Link to="/contact">
+              <li className="px-2">Contact</li>
+            </Link>
           </ul>
           <div className="hidden lg:flex justify-center items-center space-x-12">
             <button

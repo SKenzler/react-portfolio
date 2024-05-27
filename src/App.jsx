@@ -1,18 +1,20 @@
 import Navbar from "./components/Navbar";
-import ProjectCarousel from "./components/ProjectCarousel";
 import Home from "./pages/Home";
-import images from "./utilities/images";
-import FlipCard from "./components/FlipCard";
-import cards from "./utilities/cards";
+import About from "./pages/About";
+import Projects from "./pages/Projects";
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <>
-      <Navbar />
-      <Home />
-      <ProjectCarousel images={images} />
-      <FlipCard cards={cards} />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="about" element={<About />} />
+        <Route path="projects" element={<Projects />} />
+        <Route path="*" element={<Error />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
