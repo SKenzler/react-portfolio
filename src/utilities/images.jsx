@@ -4,7 +4,7 @@ import slideThree from "../assets/droid.jpg";
 import slideFour from "../assets/night-club.jpg";
 import slideFive from "../assets/Volume_Max.jpg";
 import slideSix from "../assets/racket-tennis-club.jpg";
-import slideSeven from "../assets/Design_Select.jpg";
+import slideSeven from "../assets/hatch-design.jpg";
 
 const images = [
   slideOne,

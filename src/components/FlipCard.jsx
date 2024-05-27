@@ -2,7 +2,7 @@ import React from "react";
 
 const FlipCard = ({ cards }) => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 min-h-screen gap-2">
+    <div className="grid grid-cols-1 md:grid-cols-3 min-h-screen gap-2">
       {cards.map((item) => (
         <div
           key={item.id}
