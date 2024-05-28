@@ -28,7 +28,9 @@ const FlipCard = ({ cards }) => {
                     type="button"
                     className="text-yellow-400 hover:text-[#C9C9C9] p-4"
                   >
-                    <Link to={item.path}>{item.icon}</Link>
+                    <Link to={item.path} target="_blank">
+                      {item.icon}
+                    </Link>
                   </button>
                 </div>
               </div>

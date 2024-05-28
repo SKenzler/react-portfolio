@@ -38,7 +38,7 @@ const Navbar = () => {
                 className={({ isActive }) => {
                   return isActive
                     ? "border-b-2 border-yellow-400"
-                    : "border-b-2 border-[#101824]";
+                    : "border-b-0";
                 }}
               >
                 Home
@@ -50,7 +50,7 @@ const Navbar = () => {
                 className={({ isActive }) => {
                   return isActive
                     ? "border-b-2 border-yellow-400"
-                    : "border-b-2 border-[#101824]";
+                    : "border-b-0";
                 }}
               >
                 About
@@ -62,7 +62,7 @@ const Navbar = () => {
                 className={({ isActive }) => {
                   return isActive
                     ? "border-b-2 border-yellow-400"
-                    : "border-b-2 border-[#101824]";
+                    : "border-b-0";
                 }}
               >
                 Projects
@@ -74,7 +74,7 @@ const Navbar = () => {
                 className={({ isActive }) => {
                   return isActive
                     ? "border-b-2 border-yellow-400"
-                    : "border-b-2 border-[#101824]";
+                    : "border-b-0";
                 }}
               >
                 Contact
@@ -109,7 +109,7 @@ const Navbar = () => {
                   className={({ isActive }) => {
                     return isActive
                       ? "border-b-2 border-yellow-400"
-                      : "border-b-2 border-[#101824]";
+                      : "border-b-0";
                   }}
                 >
                   Home
@@ -121,7 +121,7 @@ const Navbar = () => {
                   className={({ isActive }) => {
                     return isActive
                       ? "border-b-2 border-yellow-400"
-                      : "border-b-2 border-[#101824]";
+                      : "border-b-0";
                   }}
                 >
                   About
@@ -133,7 +133,7 @@ const Navbar = () => {
                   className={({ isActive }) => {
                     return isActive
                       ? "border-b-2 border-yellow-400"
-                      : "border-b-2 border-[#101824]";
+                      : "border-b-0";
                   }}
                 >
                   Projects
@@ -145,7 +145,7 @@ const Navbar = () => {
                   className={({ isActive }) => {
                     return isActive
                       ? "border-b-2 border-yellow-400"
-                      : "border-b-2 border-[#101824]";
+                      : "border-b-0";
                   }}
                 >
                   Contact

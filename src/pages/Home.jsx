@@ -4,6 +4,7 @@ import { BsLinkedin } from "react-icons/bs";
 import heroImage from "../assets/hero-image.png";
 import { easeIn, motion } from "framer-motion";
 import Navbar from "../components/Navbar";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -26,14 +27,15 @@ const Home = () => {
             I design, build and deploy responsive web apps using React JS,
             Tailwind CSS and Framer Motion
           </p>
-
-          <button
-            type="button"
-            className="flex justify-between items-center border-2 border-yellow-400 px-5 py-2 text-yellow-400 text-center text-base tracking-wide gap-4 font-normal rounded-md mt-5 cursor-pointer hover:border-[#C9C9C9] hover:text-[#C9C9C9]"
-          >
-            <FaGithub size={25} />
-            Checkout my Github
-          </button>
+          <Link to="https://github.com/SKenzler" target="_blank">
+            <button
+              type="button"
+              className="flex justify-between items-center border-2 border-yellow-400 px-5 py-2 text-yellow-400 text-center text-base tracking-wide gap-4 font-normal rounded-md mt-5 cursor-pointer hover:border-[#C9C9C9] hover:text-[#C9C9C9]"
+            >
+              <FaGithub size={25} />
+              Checkout my Github
+            </button>
+          </Link>
         </motion.div>
         <motion.div
           className="flex justify-end items-center"
@@ -49,15 +51,24 @@ const Home = () => {
         </motion.div>
       </div>
       <div className="flex justify-center items-center gap-8 m-5">
-        <div className="hover:scale-125 cursor-pointer">
-          <FaGithub size={28} color="#C9C9C9" />
-        </div>
-        <div className="hover:scale-125 cursor-pointer">
-          <BsLinkedin size={28} color="#C9C9C9" />
-        </div>
-        <div className="hover:scale-125 cursor-pointer">
-          <FaCodepen size={28} color="#C9C9C9" />
-        </div>
+        <Link to="https://github.com/SKenzler" target="_blank">
+          <div className="hover:scale-125 cursor-pointer">
+            <FaGithub size={28} color="#C9C9C9" />
+          </div>
+        </Link>
+        <Link
+          to="https://www.linkedin.com/in/shane-kenzler-40567497/"
+          target="_blank"
+        >
+          <div className="hover:scale-125 cursor-pointer">
+            <BsLinkedin size={28} color="#C9C9C9" />
+          </div>
+        </Link>
+        <Link to="https://codepen.io/skenzler" target="_blank">
+          <div className="hover:scale-125 cursor-pointer">
+            <FaCodepen size={28} color="#C9C9C9" />
+          </div>
+        </Link>
       </div>
     </>
   );
