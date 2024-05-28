@@ -39,9 +39,13 @@ const Home = () => {
         </motion.div>
         <motion.div
           className="flex justify-end items-center"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 2, delay: 3, ease: easeIn }}
+          initial={{ opacity: 0, x: 50 }}
+          whileInView={{
+            opacity: 1,
+            x: 0,
+            transition: { duration: 1 },
+          }}
+          viewport={{ once: true }}
         >
           <img
             className="w-full object-fill flex-shrink-0"
