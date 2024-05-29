@@ -22,32 +22,53 @@ const Contact = () => {
           />
           Get <span className="font-normal"> in Touch</span>
         </div>
-        <p className="text-[#C9C9C9] text-sm/6 font-light text-justify tracking-wide p-5">
+        <p className="w-80 text-[#C9C9C9] text-sm/6 font-light text-justify tracking-wide p-5">
           Let's make a time to chat. I am looking for opportunities to join an
           agile, innovative team with a culture that encourages growth and
           collaboration.
         </p>
       </div>
-      <form className="flex flex-col justify-start items-center">
-        <label for="name-feild" className="text-[#C9C9C9] text-start text-sm">
+      <form className="flex flex-col w-80 justify-start items-start px-5">
+        <label
+          for="name-feild"
+          className="text-[#C9C9C9] text-start text-sm mb-2"
+        >
           Name:
         </label>
         <input
           type="text"
           name="name-feild"
+          id="name-feild"
           placeholder="name"
-          className="rounded-[4px] my-2"
+          className="w-60 shadow shadow-black text-sm text-black placeholder-black appearance-none focus:outline-none rounded px-2 py-1 mb-2"
         ></input>
+        <label
+          for="email-feild"
+          className="text-[#C9C9C9] text-start text-sm mb-2"
+        >
+          Email:
+        </label>
         <input
           type="email"
+          name="email-feild"
+          id="email-feild"
           placeholder="email"
-          className="rounded-[4px] mb-2"
+          className="w-60 shadow shadow-black text-sm text-black placeholder-black appearance-none focus:outline-none rounded px-2 py-1 mb-2"
         ></input>
-        <input
-          type="textarea"
+        <label
+          for="message-feild"
+          className="text-[#C9C9C9] text-start text-sm mb-2"
+        >
+          Message:
+        </label>
+        <textarea
+          name="message-feild"
+          id="message-feild"
           placeholder="message"
-          className="rounded-[4px] mb-2"
-        ></input>
+          rows="5"
+          cols="40"
+          className="shadow shadow-black text-sm text-black placeholder-black appearance-none focus:outline-none rounded px-2 py-1 mb-2"
+        ></textarea>
         <button
           type="button"
           className="flex justify-center items-center border-2 border-yellow-400 px-5 py-1 text-yellow-400 text-center text-sm tracking-wide gap-4 font-normal rounded-md my-5 cursor-pointer hover:border-[#C9C9C9] hover:text-[#C9C9C9]"
