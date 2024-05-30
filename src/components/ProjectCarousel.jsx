@@ -75,12 +75,12 @@ const ProjectCarousel = ({ images }) => {
   };
 
   return (
-    <div className="w-full h-80 md:h-screen bg-[#101824] flex justify-center items-center overflow-hidden">
+    <div className="w-full h-80 md:h-screen bg-[#101824] flex justify-center items-center">
       <AnimatePresence>
         {images.map((item, index) => (
           <motion.img
             key={index}
-            className="flex justify-center items-center w-[22em] sm:w-[30em] object-fill p-2"
+            className="flex justify-center items-center w-[22em] sm:w-[30em] object-fill p-2 overflow-hidden"
             src={item}
             alt={item}
             initial="center"

@@ -1,18 +1,19 @@
 import React from "react";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import contactImage from "../assets/contact-image.png";
 import { Link } from "react-router-dom";
 import { FaGithub, FaCodepen, FaCommentAlt } from "react-icons/fa";
 import { FaMessage, FaEnvelope } from "react-icons/fa6";
 import { BsLinkedin } from "react-icons/bs";
-import { motion } from "framer-motion";
+import { easeIn, motion } from "framer-motion";
 
 const Contact = () => {
   return (
     <>
       <Navbar />
-      <div w-full h-screen flex flex-col justify-center items-center>
-        <h1 className="flex justify-center  text-center text-[#C9C9C9] text-4xl font-bold mt-12">
+      <div className="w-full h-full flex flex-col justify-center items-center">
+        <h1 className="flex justify-center text-center text-[#C9C9C9] text-4xl font-bold mt-12">
           CONTACT<span className="font-light">&nbsp; Me</span>
         </h1>
         <div className="flex justify-center items-center w-full bg-yellow-400 font-semibold text-2xl my-4">
@@ -24,18 +25,9 @@ const Contact = () => {
           />
           Get <span className="font-normal">&nbsp; in Touch</span>
         </div>
-        <div className="flex justify-center items-center">
-          <motion.div
-            className="w-full flex justify-center"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 2 }}
-          >
-            <FaMessage size={"12rem"} color="#C9C9C9" />
-            <FaCommentAlt />
-          </motion.div>
-          <div className="flex flex-col w-full p-10">
-            <div className="flex">
+        <div className="w-3/5 flex flex-col md:flex-row justify-center items-center p-10">
+          <div className="flex flex-col w-full">
+            <div className="flex px-5">
               <FaEnvelope size={"1.4rem"} color="#C9C9C9" />
               <h6 className="text-[#C9C9C9] text-sm font-nornmal text-start">
                 &nbsp; shanekenzler@gmail.com
@@ -95,27 +87,24 @@ const Contact = () => {
               </button>
             </form>
           </div>
-        </div>
-        <div className="flex justify-center items-center gap-8 m-5">
-          <Link to="https://github.com/SKenzler" target="_blank">
-            <div className="hover:scale-125 cursor-pointer">
-              <FaGithub size={28} color="#C9C9C9" />
-            </div>
-          </Link>
-          <Link
-            to="https://www.linkedin.com/in/shane-kenzler-40567497/"
-            target="_blank"
+          <motion.div
+            className="w-full flex justify-center p-1"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 2, delay: 1, ease: easeIn }}
           >
-            <div className="hover:scale-125 cursor-pointer">
-              <BsLinkedin size={28} color="#C9C9C9" />
-            </div>
-          </Link>
-          <Link to="https://codepen.io/skenzler" target="_blank">
-            <div className="hover:scale-125 cursor-pointer">
-              <FaCodepen size={28} color="#C9C9C9" />
-            </div>
-          </Link>
+            <FaMessage size={"12rem"} color="#C9C9C9" />
+          </motion.div>
+          <motion.div
+            className="w-full flex justify-center p-2"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 2, delay: 2, ease: easeIn }}
+          >
+            <FaCommentAlt size={"8rem"} color="#FACC15" />
+          </motion.div>
         </div>
+        <Footer />
       </div>
     </>
   );
