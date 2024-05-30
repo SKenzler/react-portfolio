@@ -4,6 +4,7 @@ import logo from "../assets/design-build-deploy-logo.png";
 import { FaBars, FaXmark } from "react-icons/fa6";
 import { FaDownload, FaGithub } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
+import TimeDisplay from "../components/TimeDisplay";
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -89,6 +90,7 @@ const Navbar = () => {
               <FaDownload size={14} />
               Download CV
             </button>
+            <TimeDisplay />
           </div>
           <div className="lg:hidden md:flex flex-col justify-end">
             <button type="button" onClick={toggleHamburger}>
