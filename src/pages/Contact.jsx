@@ -1,11 +1,9 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import contactImage from "../assets/contact-image.png";
-import { Link } from "react-router-dom";
-import { FaGithub, FaCodepen, FaCommentAlt } from "react-icons/fa";
+import contactImage from "../assets/glasses-image.png";
+import { FaCommentAlt } from "react-icons/fa";
 import { FaMessage, FaEnvelope } from "react-icons/fa6";
-import { BsLinkedin } from "react-icons/bs";
 import { easeIn, motion } from "framer-motion";
 
 const Contact = () => {
@@ -13,17 +11,16 @@ const Contact = () => {
     <>
       <Navbar />
       <div className="w-full h-full flex flex-col justify-center items-center">
-        <h1 className="flex justify-center text-center text-[#C9C9C9] text-4xl font-bold mt-12">
-          CONTACT<span className="font-light">&nbsp; Me</span>
-        </h1>
-        <div className="flex justify-center items-center w-full bg-yellow-400 font-semibold text-2xl my-4">
+        <div className="flex justify-center items-center w-full bg-yellow-400 my-4">
           {" "}
           <img
             className="w-20 h-20 object-contain mx-2"
             src={contactImage}
             alt="Contact glasses graphic"
           />
-          Get <span className="font-normal">&nbsp; in Touch</span>
+          <h1 className="font-semibold text-2xl ">
+            Get <span className="font-normal text-xl">in touch</span>
+          </h1>
         </div>
         <div className="w-3/5 flex flex-col md:flex-row justify-center items-center p-10">
           <div className="flex flex-col w-full">
