@@ -15,7 +15,7 @@ const Home = () => {
           className="w-3/4 flex flex-col justify-center items-center text-[#C9C9C9] mt-5 p-5"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 2, delay: 5, ease: easeIn }}
+          transition={{ duration: 2, delay: 3, ease: easeIn }}
         >
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-medium tracking-wide p-2">
             Frontend <span className="font-black uppercase">Developer</span>
@@ -43,7 +43,7 @@ const Home = () => {
           whileInView={{
             opacity: 1,
             x: 0,
-            transition: { duration: 2, delay: 1, ease: easeInOut },
+            transition: { duration: 3, ease: easeInOut },
           }}
           viewport={{ once: true }}
         >

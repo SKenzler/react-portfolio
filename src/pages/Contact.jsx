@@ -31,11 +31,13 @@ const Contact = () => {
               </h6>
             </div>
             <p className="text-[#C9C9C9] text-sm/6 font-light text-justify tracking-wide p-5">
-              Let's make a time to chat. I am looking for opportunities to join
-              an agile, innovative team with a culture that encourages growth
-              and collaboration.
+              <span className="font-bold uppercase">
+                Let's make a time to chat.
+              </span>
+              <br />I am looking for opportunities to join an agile, innovative
+              team with a culture that encourages growth and collaboration.
             </p>
-            <form className="flex flex-col justify-start items-start px-5">
+            <form className="w-full flex flex-col justify-start items-start px-5">
               <label
                 htmlFor="name-feild"
                 className="text-[#C9C9C9] text-start text-sm mb-2"
@@ -85,20 +87,13 @@ const Contact = () => {
             </form>
           </div>
           <motion.div
-            className="w-full flex justify-center p-1"
+            className="w-full flex justify-center px-10"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 2, delay: 1, ease: easeIn }}
           >
-            <FaMessage size={"12rem"} color="#C9C9C9" />
-          </motion.div>
-          <motion.div
-            className="w-full flex justify-center p-2"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 2, delay: 2, ease: easeIn }}
-          >
-            <FaCommentAlt size={"8rem"} color="#FACC15" />
+            <FaMessage size={"14rem"} color="#C9C9C9" />
+            <FaCommentAlt size={"10rem"} color="#FACC15" />
           </motion.div>
         </div>
         <Footer />

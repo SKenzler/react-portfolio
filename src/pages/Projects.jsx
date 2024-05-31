@@ -11,7 +11,7 @@ const Projects = () => {
   return (
     <>
       <Navbar />
-      <div className="w-full h-screenflex flex-col">
+      <div className="w-full h-full flex flex-col justify-center items-center">
         <div className="flex justify-center items-center w-full bg-yellow-400 my-4">
           {" "}
           <img
@@ -24,18 +24,21 @@ const Projects = () => {
             <span className="font-normal text-xl">desings and projects</span>
           </h1>
         </div>
-        <div w-full flex justify-center>
+        <div className="w-4/6 flex justify-center items-center text-base text-[#C9C9C9] text-pretty p-5 mt-8">
+          I have Frontend Developer for the last 2 years. My passion is
+          designing, building and deploying scalable web apps using React JS,
+          Tailwind CSS and Framer Motion. My skill set includes a solid
+          grounding in HTML5, CSS3, JavaScript and React JS. In addition, I have
+          derived strong programming principles from attaining a Bachelor Degree
+          in Computer Science, enabling me to apply these skills toward the
+          completion of personal projects.
+        </div>
+        <div className="w-full flex justify-center">
           <ProjectCarousel images={images} />
         </div>
-        <p className="text-sm text-[#C9C9C9] text-center tracking-wide m-5">
-          The following are some Landing Page designs created in Figma.
-        </p>
         <div w-full flex justify-center>
           <FlipCard cards={cards} />
         </div>
-        <p className="text-sm text-[#C9C9C9] text-center tracking-wide m-5">
-          The following are some Personal Projects build using React.
-        </p>
         <Footer />
       </div>
     </>

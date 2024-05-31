@@ -35,8 +35,8 @@ const About = () => {
           The following is an outline of my process in designing, buidling and
           deploying web apps:
         </div>
-        <div className="flex sm:flex-col justify-center items-center my-10">
-          <div className="flex">
+        <div className="w-full flex sm:flex-col justify-center items-center">
+          <div className="flex my-10">
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0, transition: { duration: 1 } }}
@@ -49,36 +49,51 @@ const About = () => {
               />
             </motion.div>
             <div className="w-4/12 text-sm text-[#C9C9C9] text-pretty tracking-wide p-5">
-              <h1>Design</h1>
-              <p>Using Figma, I design Wireframes, compnents and protypes</p>
+              <h1 className="text-2xl uppercase font-bold py-2">Design</h1>
+              <p>Using Figma, I design wireframes, compnents and protypes</p>
+            </div>
+          </div>
+          <div className="flex my-10">
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{
+                opacity: 1,
+                x: 0,
+                transition: { duration: 1, delay: 1 },
+              }}
+              viewport={{ once: true }}
+            >
+              <img src={aboutBuild} alt="Vscode logo with code examples" />
+            </motion.div>
+            <div className="w-4/12 text-sm text-[#C9C9C9] text-pretty tracking-wide p-5">
+              <h1 className="text-2xl uppercase font-bold py-2">Build</h1>
+              <p>
+                Build using VsCode as an EDI React JS, Tailwind CSS and Framer
+                Motion dependncies.
+              </p>
+            </div>
+          </div>
+          <div className="flex my-10">
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{
+                opacity: 1,
+                x: 0,
+                transition: { duration: 1, delay: 2 },
+              }}
+              viewport={{ once: true }}
+            >
+              <img
+                src={aboutDeploy}
+                alt="React logo with examples of deployed apps"
+              />
+            </motion.div>
+            <div className="w-4/12 text-sm text-[#C9C9C9] text-pretty tracking-wide p-5">
+              <h1 className="text-2xl uppercase font-bold py-2">Deploy</h1>
+              <p>Deploy using GitHub pages</p>
             </div>
           </div>
         </div>
-        <motion.div
-          initial={{ opacity: 0, x: -50 }}
-          whileInView={{
-            opacity: 1,
-            x: 0,
-            transition: { duration: 1, delay: 1 },
-          }}
-          viewport={{ once: true }}
-        >
-          <img src={aboutBuild} alt="Vscode logo with code examples" />
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0, x: -50 }}
-          whileInView={{
-            opacity: 1,
-            x: 0,
-            transition: { duration: 1, delay: 2 },
-          }}
-          viewport={{ once: true }}
-        >
-          <img
-            src={aboutDeploy}
-            alt="React logo with examples of deployed apps"
-          />
-        </motion.div>
         <Footer />
       </div>
     </>
