@@ -1,7 +1,7 @@
 import React from "react";
 import heroImage from "../assets/hero-image.png";
 import { FaGithub } from "react-icons/fa";
-import { easeIn, motion } from "framer-motion";
+import { easeIn, easeInOut, motion } from "framer-motion";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
@@ -43,7 +43,7 @@ const Home = () => {
           whileInView={{
             opacity: 1,
             x: 0,
-            transition: { duration: 3, delay: 1, ease: easeIn },
+            transition: { duration: 2, delay: 1, ease: easeInOut },
           }}
           viewport={{ once: true }}
         >
