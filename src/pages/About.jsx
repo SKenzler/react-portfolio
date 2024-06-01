@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import SkillSlider from "../components/SkillSlider";
 import contactImage from "../assets/glasses-image.png";
 import aboutDesign from "../assets/about-page-design.png";
 import aboutBuild from "../assets/about-page-vscode.png";
@@ -35,6 +36,7 @@ const About = () => {
           The following is an outline of my process in designing, buidling and
           deploying web apps:
         </div>
+        <SkillSlider />
         <div className="w-full flex sm:flex-col justify-center items-center">
           <div className="flex my-10">
             <motion.div

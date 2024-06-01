@@ -33,7 +33,7 @@ const Projects = () => {
           in Computer Science, enabling me to apply these skills toward the
           completion of personal projects.
         </div>
-        <div className="w-full flex justify-center">
+        <div className="w-full flex justify-center items-center">
           <ProjectCarousel images={images} />
         </div>
         <div w-full flex justify-center>
