@@ -2,9 +2,10 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import contactImage from "../assets/glasses-image.png";
+import avatarImage from "../assets/Profile_Avatar_Lrg.png";
 import { FaCommentAlt } from "react-icons/fa";
 import { FaMessage, FaEnvelope } from "react-icons/fa6";
-import { easeIn, motion } from "framer-motion";
+import { easeIn, easeInOut, motion } from "framer-motion";
 
 const Contact = () => {
   return (
@@ -22,22 +23,22 @@ const Contact = () => {
             Get <span className="font-normal text-xl">in touch</span>
           </h1>
         </div>
-        <div className="w-3/5 flex flex-col md:flex-row justify-center items-center p-10">
-          <div className="flex flex-col w-full">
+        <div className="w-full flex flex-col md:flex-row justify-center items-center p-10">
+          <div className="flex flex-col">
             <div className="flex px-5">
               <FaEnvelope size={"1.4rem"} color="#C9C9C9" />
               <h6 className="text-[#C9C9C9] text-sm font-nornmal text-start">
                 &nbsp; shanekenzler@gmail.com
               </h6>
             </div>
-            <p className="text-[#C9C9C9] text-sm/6 font-light text-justify tracking-wide p-5">
+            <p className="w-full md:w-72 text-[#C9C9C9] text-sm/6 font-light text-justify tracking-wide p-5">
               <span className="font-bold uppercase">
                 Let's make a time to chat.
               </span>
               <br />I am looking for opportunities to join an agile, innovative
               team with a culture that encourages growth and collaboration.
             </p>
-            <form className="w-full flex flex-col justify-start items-start px-5">
+            <form className="w-full lg:w-80 flex flex-col justify-start items-start px-5">
               <label
                 htmlFor="name-feild"
                 className="text-[#C9C9C9] text-start text-sm mb-2"
@@ -86,15 +87,17 @@ const Contact = () => {
               </button>
             </form>
           </div>
-          <motion.div
-            className="w-full flex justify-center px-10"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 2, delay: 1, ease: easeIn }}
-          >
-            <FaMessage size={"14rem"} color="#C9C9C9" />
-            <FaCommentAlt size={"10rem"} color="#FACC15" />
-          </motion.div>
+          <motion.img
+            animate={{ y: [0, 10, 0], scale: [0, 1.2, 1] }}
+            transition={{
+              duration: 2,
+              delay: 1,
+              ease: easeInOut,
+            }}
+            className="flex flex-shrink-0 justify-center items-center w-64 md:w-80 mx-10"
+            src={avatarImage}
+            alt="Avatar Image"
+          />
         </div>
         <Footer />
       </div>
