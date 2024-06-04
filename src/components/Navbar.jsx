@@ -32,7 +32,7 @@ const Navbar = () => {
               </span>
             </div>
           </NavLink>
-          <ul className="hidden lg:flex ml-14 space-x-12 text-sm text-white cursor-pointer">
+          <ul className="hidden lg:flex ml-14 space-x-12 text-sm text-[#C9C9C9] cursor-pointer">
             <li className="px-2">
               <NavLink
                 to="/"
