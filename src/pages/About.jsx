@@ -27,7 +27,7 @@ const About = () => {
         <h1 className="w-4/6 text-3xl text-[#C9C9C9] text-start font-normal mt-4">
           I'm a Frontend Developer from Perth, Australia.
         </h1>
-        <div className="w-4/6 flex justify-center items-center text-base text-[#C9C9C9] text-pretty py-5 mt-2">
+        <div className="w-4/6 text-base text-[#C9C9C9] text-pretty py-5 mt-2">
           My fous is on designing, building and delpoying experince for a user
           whilst clear message functionaly. designing, building and deploying
           creative web apps using React JS, Tailwind CSS and Framer Motion. My
@@ -40,9 +40,12 @@ const About = () => {
           Tailwind CSS, npm, Git, GitHub, VsCode and Figma:
         </div>
         <SkillSlider />
-        <div className="w-full flex flex-col justify-start items-center p-2">
-          <div className="w-72 sm:w-1/4 flex flex-col border border-yellow-400 rounded-lg shadow-lg my-10">
-            <h1 className="bg-yellow-400 text-3xl text-[#101824] text-center uppercase font-bold rounded-t-lg-lg py-2">
+        <h1 className="w-4/6 text-3xl text-[#C9C9C9] text-start font-normal mt-4">
+          Design Process
+        </h1>
+        <div className="w-full flex flex-col sm:flex-row justify-center gap-4 items-center p-2">
+          <div className="w-72 h-[25em] sm:w-1/4 flex flex-col shadow-lg shadow-black my-10">
+            <h1 className="bg-[#C9C9C9]  text-3xl text-[#101824] text-center uppercase font-bold rounded-t-lg-lg py-2">
               Design
             </h1>
             <motion.div
@@ -61,11 +64,15 @@ const About = () => {
               />
             </motion.div>
             <div className="w-full flex justify-start items-start text-sm text-[#C9C9C9] text-pretty tracking-wide p-5">
-              <p>Using Figma, I design wireframes, compnents and protypes</p>
+              <p>
+                By producing wireframes, components, design concepts and
+                prototypes in Figma, decisions about colours, fonts, images
+                layouts and other design elements can be made.
+              </p>
             </div>
           </div>
-          <div className="w-72 sm:w-1/4 flex flex-col border border-yellow-400 rounded-lg shadow-lg my-10">
-            <h1 className="bg-yellow-400 text-3xl text-[#101824] text-center uppercase font-bold rounded-t-lg-lg py-2">
+          <div className="w-72 h-[25em] sm:w-1/4 flex flex-col shadow-lg shadow-black my-10">
+            <h1 className="bg-[#C9C9C9] text-3xl text-[#101824] text-center uppercase font-bold rounded-t-lg-lg py-2">
               Build
             </h1>
             <motion.div
@@ -80,15 +87,17 @@ const About = () => {
               <img
                 className="w-50 object-fill"
                 src={aboutBuild}
-                alt="Portfolio Landing Pages with Figma logo"
+                alt="Code snippets with React logo"
               />
             </motion.div>
             <div className="w-full flex justify-start items-start text-sm text-[#C9C9C9] text-pretty tracking-wide p-5">
-              <p>Using Figma, I design wireframes, compnents and protypes</p>
+              <p>
+                Building in VsCode, React JS, Tailwind CSS and Framer Motion.
+              </p>
             </div>
           </div>
-          <div className="w-72 sm:w-1/4 flex flex-col border border-yellow-400 rounded-lg shadow-lg my-10">
-            <h1 className="bg-yellow-400 text-3xl text-[#101824] text-center uppercase font-bold rounded-t-lg-lg py-2">
+          <div className="w-72 h-[25em] sm:w-1/4 flex flex-col shadow-lg shadow-black my-10">
+            <h1 className="bg-[#C9C9C9] text-3xl text-[#101824] text-center uppercase font-bold rounded-t-lg-lg py-2">
               Deploy
             </h1>
             <motion.div

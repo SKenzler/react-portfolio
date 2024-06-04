@@ -82,7 +82,7 @@ const Navbar = () => {
               </NavLink>
             </li>
           </ul>
-          <div className="hidden lg:flex justify-center items-center px-2">
+          <div className="hidden w-80 lg:flex justify-center items-center">
             <button
               type="button"
               className="bg-yellow-400 flex px-5 py-2 text-center gap-2 font-bold rounded-md cursor-pointer hover:bg-[#C9C9C9]"
