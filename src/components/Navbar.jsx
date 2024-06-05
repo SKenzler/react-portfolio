@@ -1,9 +1,10 @@
 import React from "react";
 import { useState } from "react";
 import logo from "../assets/design-build-deploy-logo.png";
+import resume from "../assets/resume-jan-2024.pdf";
 import { FaBars, FaXmark } from "react-icons/fa6";
 import { FaDownload, FaGithub } from "react-icons/fa";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import TimeDisplay from "../components/TimeDisplay";
 
 const Navbar = () => {
@@ -83,13 +84,20 @@ const Navbar = () => {
             </li>
           </ul>
           <div className="hidden w-80 lg:flex justify-center items-center">
-            <button
-              type="button"
-              className="bg-yellow-400 flex px-5 py-2 text-center gap-2 font-bold rounded-md cursor-pointer hover:bg-[#C9C9C9]"
+            <Link
+              to={resume}
+              download="Resume_Jan_2024"
+              target="_blank"
+              rel="noreferrer"
             >
-              <FaDownload size={14} />
-              Download CV
-            </button>
+              <button
+                type="button"
+                className="bg-yellow-400 flex px-5 py-2 text-center gap-2 font-bold rounded-md cursor-pointer hover:bg-[#C9C9C9]"
+              >
+                <FaDownload size={14} />
+                Download CV
+              </button>
+            </Link>
             <TimeDisplay />
           </div>
           <div className="lg:hidden md:flex flex-col justify-end">
@@ -154,13 +162,20 @@ const Navbar = () => {
                 </NavLink>
               </li>
             </ul>
-            <button
-              type="button"
-              className="bg-yellow-400 flex px-5 py-2 text-center gap-2 font-bold rounded-md cursor-pointer hover:bg-[#C9C9C9]"
+            <Link
+              to={esume}
+              download="Resume_Jan_2024"
+              target="_blank"
+              rel="noreferrer"
             >
-              <FaDownload size={14} />
-              Download CV
-            </button>
+              <button
+                type="button"
+                className="bg-yellow-400 flex px-5 py-2 text-center gap-2 font-bold rounded-md cursor-pointer hover:bg-[#C9C9C9]"
+              >
+                <FaDownload size={14} />
+                Download CV
+              </button>
+            </Link>
           </div>
         )}
       </div>
