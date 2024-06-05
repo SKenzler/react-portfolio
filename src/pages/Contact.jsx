@@ -5,7 +5,7 @@ import contactImage from "../assets/glasses-image.png";
 import avatarImage from "../assets/Profile_Avatar_Lrg.png";
 import { FaCommentAlt } from "react-icons/fa";
 import { FaMessage, FaEnvelope } from "react-icons/fa6";
-import { easeIn, easeInOut, motion } from "framer-motion";
+import { easeInOut, motion } from "framer-motion";
 
 const Contact = () => {
   return (

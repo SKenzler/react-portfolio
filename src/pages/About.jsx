@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import SkillSlider from "../components/SkillSlider";
+import { FaArrowRight } from "react-icons/fa6";
 import contactImage from "../assets/glasses-image.png";
 import aboutDesign from "../assets/about-page-design.png";
 import aboutBuild from "../assets/about-page-vscode.png";
@@ -27,25 +28,72 @@ const About = () => {
         <h1 className="w-4/6 text-3xl text-[#C9C9C9] text-start font-normal mt-4">
           I'm a Frontend Developer from Perth, Australia.
         </h1>
-        <div className="w-4/6 text-base text-[#C9C9C9] text-pretty py-5 mt-2">
-          My fous is on designing, building and delpoying experince for a user
-          whilst clear message functionaly. designing, building and deploying
-          creative web apps using React JS, Tailwind CSS and Framer Motion. My
-          skill set includes a solid grounding in HTML5, CSS3, JavaScript and
-          React JS. Is, I have derived strong programming principles from
-          attaining a Bachelor Degree in Computer Science, enabling me to apply
-          these skills toward the completion of personal projects. <br />
-          <br />
-          My skill set includes HTML5, CSS3, JavaScript, React JS, Bootstrap,
-          Tailwind CSS, npm, Git, GitHub, VsCode and Figma:
+        <div className="w-4/6 flex flex-rows text-base text-[#C9C9C9] text-pretty py-5 mt-2">
+          My focus is on designing, building and delpoying creative web apps.
+          The user experience is central interactive animation that conveys a
+          clear message functionaly. designing, building and deploying creative
+          web apps using React JS, Tailwind CSS and Framer Motion. My skill set
+          includes a solid grounding in HTML5, CSS3, JavaScript and React JS. I
+          have strong programming principles attined from my Bachelor Degree in
+          Computer Science, enabling me to apply these skills toward the
+          completion of personal projects.
         </div>
-        <SkillSlider />
-        <h1 className="w-4/6 text-3xl text-[#C9C9C9] text-start font-normal mt-4">
-          Design Process
+        <h1 className="flex justify-center items-center text-3xl text-[#C9C9C9] text-center tracking-wide">
+          My Skillset
         </h1>
-        <div className="w-full flex flex-col sm:flex-row justify-center gap-4 items-center p-2">
-          <div className="w-72 h-[25em] sm:w-1/4 flex flex-col shadow-lg shadow-black my-10">
-            <h1 className="bg-[#C9C9C9]  text-3xl text-[#101824] text-center uppercase font-bold rounded-t-lg-lg py-2">
+        <ul className="grid grid-cols-2 sm:grid-cols-3 justify-center items-center text-[#C9C9C9] border-2 border-[#C9C9C9] rounded-lg p-10 my-4">
+          <li className="flex justify-start items-center p-2">
+            <FaArrowRight size={14} color="#FACC15" />
+            &nbsp;HTML5
+          </li>
+          <li className="flex justify-start items-center p-2">
+            <FaArrowRight size={14} color="#FACC15" />
+            &nbsp;CSS3
+          </li>
+          <li className="flex justify-start items-center p-2">
+            <FaArrowRight size={14} color="#FACC15" />
+            &nbsp;JavaScript
+          </li>
+          <li className="flex justify-start items-center p-2">
+            <FaArrowRight size={14} color="#FACC15" />
+            &nbsp;React JS
+          </li>{" "}
+          <li className="flex justify-start items-center p-2">
+            <FaArrowRight size={14} color="#FACC15" />
+            &nbsp;Bootstrap
+          </li>
+          <li className="flex justify-start items-center p-2">
+            <FaArrowRight size={14} color="#FACC15" />
+            &nbsp;Tailwind CSS
+          </li>
+          <li className="flex justify-start items-center p-2">
+            <FaArrowRight size={14} color="#FACC15" />
+            &nbsp;npm
+          </li>
+          <li className="flex justify-start items-center p-2">
+            <FaArrowRight size={14} color="#FACC15" />
+            &nbsp;Git
+          </li>
+          <li className="flex justify-start items-center p-2">
+            <FaArrowRight size={14} color="#FACC15" />
+            &nbsp;GitHub
+          </li>
+          <li className="flex justify-start items-center p-2">
+            <FaArrowRight size={14} color="#FACC15" />
+            &nbsp;VsCode
+          </li>
+          <li className="flex justify-start items-center p-2">
+            <FaArrowRight size={14} color="#FACC15" />
+            &nbsp;Figma
+          </li>
+        </ul>
+        <SkillSlider />
+        <h1 className="w-4/6 text-3xl text-[#C9C9C9] text-center font-normal mt-4">
+          What can I do
+        </h1>
+        <div className="w-full flex flex-col sm:flex-row justify-center gap-5 items-center p-2">
+          <div className="w-72 h-[25em] sm:w-1/4 flex flex-col shadow-lg shadow-black my-10 hover:scale-105">
+            <h1 className="bg-[#C9C9C9]  text-3xl text-[#101824] text-center uppercase font-bold py-2">
               Design
             </h1>
             <motion.div
@@ -71,8 +119,8 @@ const About = () => {
               </p>
             </div>
           </div>
-          <div className="w-72 h-[25em] sm:w-1/4 flex flex-col shadow-lg shadow-black my-10">
-            <h1 className="bg-[#C9C9C9] text-3xl text-[#101824] text-center uppercase font-bold rounded-t-lg-lg py-2">
+          <div className="w-72 h-[25em] sm:w-1/4 flex flex-col shadow-lg shadow-black hover:scale-105 my-10">
+            <h1 className="bg-[#C9C9C9] text-3xl text-[#101824] text-center uppercase font-bold py-2">
               Build
             </h1>
             <motion.div
@@ -96,8 +144,8 @@ const About = () => {
               </p>
             </div>
           </div>
-          <div className="w-72 h-[25em] sm:w-1/4 flex flex-col shadow-lg shadow-black my-10">
-            <h1 className="bg-[#C9C9C9] text-3xl text-[#101824] text-center uppercase font-bold rounded-t-lg-lg py-2">
+          <div className="w-72 h-[25em] sm:w-1/4 flex flex-col shadow-lg shadow-black hover:scale-105 my-10">
+            <h1 className="bg-[#C9C9C9] text-3xl text-[#101824] text-center uppercase font-bold py-2">
               Deploy
             </h1>
             <motion.div
