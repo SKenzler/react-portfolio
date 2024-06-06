@@ -163,7 +163,7 @@ const Navbar = () => {
               </li>
             </ul>
             <Link
-              to={esume}
+              to={resume}
               download="Resume_Jan_2024"
               target="_blank"
               rel="noreferrer"

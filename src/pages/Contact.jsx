@@ -23,18 +23,18 @@ const Contact = () => {
             Get <span className="font-normal text-xl">in touch</span>
           </h1>
         </div>
-        <div className="w-full flex flex-col md:flex-row justify-center items-center p-10">
-          <div className="flex flex-col">
-            <div className="flex px-5">
+        <div className="w-full sm:w-1/4 flex flex-col md:flex-row justify-center items-center p-2">
+          <div className="w-full flex flex-col">
+            <h1 className="w-full text-3xl text-[#C9C9C9] text-start font-normal tracking-wide px-5 mt-4">
+              Let's make a time to chat.
+            </h1>
+            <div className="w-full flex px-5 mt-4">
               <FaEnvelope size={"1.4rem"} color="#C9C9C9" />
               <h6 className="text-[#C9C9C9] text-sm font-nornmal text-start">
                 &nbsp; shanekenzler@gmail.com
               </h6>
             </div>
             <p className="w-full md:w-72 text-[#C9C9C9] text-sm/6 font-light text-justify tracking-wide p-5">
-              <span className="font-bold uppercase">
-                Let's make a time to chat.
-              </span>
               <br />I am looking for opportunities to join an agile, innovative
               team with a culture that encourages growth and collaboration.
             </p>

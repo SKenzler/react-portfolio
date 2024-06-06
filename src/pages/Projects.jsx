@@ -24,11 +24,16 @@ const Projects = () => {
             <span className="font-normal text-xl">designs and projects</span>
           </h1>
         </div>
-        <h1 className="w-4/6 text-3xl text-[#C9C9C9] text-start font-normal mt-4">
-          Landing Page Design Concepts
+        <h1 className="w-full text-3xl text-[#C9C9C9] text-center font-normal px-5 mt-4">
+          Design Concepts and Personal Projects
         </h1>
         <div className="w-4/6 text-base text-[#C9C9C9] text-pretty mt-8">
-          The following are some examples of design concepts created in Figma.
+          Using a mobile first design approach, my aim is to create high impact,
+          clean and creative designs. The design process Figma wireframes,
+          components and protypes.
+          <br />
+          <br />
+          Personal Prjects built using React.
         </div>
 
         <ProjectCarousel images={images} />
