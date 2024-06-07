@@ -39,7 +39,7 @@ const About = () => {
           Computer Science, enabling me to apply these skills toward the
           completion of personal projects.
           <img
-            className="flex justify-center items-center w-3/4 sm:w-80"
+            className="flex flex-shrink-0 justify-center items-center w-3/4 sm:w-80 m-10"
             src={profileImage}
             alt="Profile Image"
           />
