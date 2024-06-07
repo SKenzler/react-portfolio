@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import contactImage from "../assets/glasses-image.png";
-import avatarImage from "../assets/Profile_Avatar_Lrg.png";
+import yellowOffice from "../assets/yellow-office.png";
 import { FaCommentAlt } from "react-icons/fa";
 import { FaMessage, FaEnvelope } from "react-icons/fa6";
 import { easeInOut, motion } from "framer-motion";
@@ -94,8 +94,8 @@ const Contact = () => {
               delay: 1,
               ease: easeInOut,
             }}
-            className="flex flex-shrink-0 justify-center items-center w-64 md:w-80 mx-10"
-            src={avatarImage}
+            className="flex flex-shrink-0 justify-center items-center rounded-lg mx-10"
+            src={yellowOffice}
             alt="Avatar Image"
           />
         </div>
