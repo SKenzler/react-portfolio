@@ -94,7 +94,7 @@ const Contact = () => {
               delay: 1,
               ease: easeInOut,
             }}
-            className="flex flex-shrink-0 justify-center items-center rounded-lg mx-10"
+            className="flex flex-shrink-0 justify-center items-center w-1/2 sm:w-3/4 rounded-lg mx-20"
             src={yellowOffice}
             alt="Avatar Image"
           />
