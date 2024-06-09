@@ -1,10 +1,9 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import { FaEnvelope } from "react-icons/fa6";
 import contactImage from "../assets/glasses-image.png";
 import yellowOffice from "../assets/yellow-office.png";
-import { FaCommentAlt } from "react-icons/fa";
-import { FaMessage, FaEnvelope } from "react-icons/fa6";
 import { easeInOut, motion } from "framer-motion";
 
 const Contact = () => {
@@ -23,22 +22,22 @@ const Contact = () => {
             Get <span className="font-normal text-xl">in touch</span>
           </h1>
         </div>
-        <div className="w-full sm:w-1/4 flex flex-col md:flex-row justify-center items-center p-2">
-          <div className="w-full flex flex-col">
+        <div className="w-full lg:w-9/12 flex flex-col md:flex-row justify-center items-center p-2">
+          <div className="w-full flex flex-col mx-10">
             <h1 className="w-full text-3xl text-[#C9C9C9] text-start font-normal tracking-wide px-5 mt-4">
               Let's make a time to chat.
             </h1>
-            <div className="w-full flex px-5 mt-4">
+            <div className="w-full flex px-5 mt-2">
               <FaEnvelope size={"1.4rem"} color="#C9C9C9" />
               <h6 className="text-[#C9C9C9] text-sm font-nornmal text-start">
                 &nbsp; shanekenzler@gmail.com
               </h6>
             </div>
-            <p className="w-full md:w-72 text-[#C9C9C9] text-sm/6 font-light text-justify tracking-wide p-5">
+            <p className="w-9/12 text-[#C9C9C9] text-sm/6 font-light text-justify tracking-wide px-5">
               <br />I am looking for opportunities to join an agile, innovative
               team with a culture that encourages growth and collaboration.
             </p>
-            <form className="w-full lg:w-80 flex flex-col justify-start items-start px-5">
+            <form className="w-full lg:w-80 flex flex-col justify-start items-start px-5 mt-4">
               <label
                 htmlFor="name-feild"
                 className="text-[#C9C9C9] text-start text-sm mb-2"
@@ -88,15 +87,12 @@ const Contact = () => {
             </form>
           </div>
           <motion.img
-            animate={{ y: [0, 10, 0], scale: [0, 1.2, 1] }}
-            transition={{
-              duration: 2,
-              delay: 1,
-              ease: easeInOut,
-            }}
-            className="flex flex-shrink-0 justify-center items-center w-1/2 sm:w-3/4 rounded-lg mx-20"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 2, delay: 1, ease: easeInOut }}
+            className="flex flex-shrink-0 justify-center items-center w-1/2 sm:w-64 rounded-lg mx-10 mt-8 lg:mt-0"
             src={yellowOffice}
-            alt="Avatar Image"
+            alt="Phone chat Image"
           />
         </div>
         <Footer />
