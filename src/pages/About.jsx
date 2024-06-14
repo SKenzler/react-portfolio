@@ -16,7 +16,6 @@ const About = () => {
       <Navbar />
       <div className="w-full h-full flex flex-col justify-center items-center">
         <div className="flex justify-center items-center w-full bg-yellow-400 my-4">
-          {" "}
           <img
             className="w-20 h-20 object-contain mx-2"
             src={contactImage}
