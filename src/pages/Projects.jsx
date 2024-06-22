@@ -10,8 +10,8 @@ import cards from "../utilities/cards";
 const Projects = () => {
   return (
     <>
-      <Navbar />
       <div className="w-full h-full flex flex-col justify-center items-center">
+        <Navbar />
         <div className="flex justify-center items-center w-full bg-yellow-400 my-4">
           <img
             className="w-20 h-20 object-contain mx-2"
@@ -19,7 +19,7 @@ const Projects = () => {
             alt="Contact glasses graphic"
           />
           <h1 className="font-semibold text-2xl ">
-            Some
+            Some{" "}
             <span className="font-normal text-xl">designs and projects</span>
           </h1>
         </div>
