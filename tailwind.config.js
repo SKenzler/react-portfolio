@@ -3,10 +3,9 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
-      backgroundImage: (theme) => ({
-        blob: "url('src/assets/bgd-blob.png')",
-      }),
-      // Define animation class
+      backgroundImage: {
+        blob: "url('../src/assets/bgd-blob.png')",
+      },
       animation: {
         "scale-blob": "scale-bg 12000ms linear forwards",
       },
@@ -14,7 +13,7 @@ export default {
       keyframes: {
         "scale-bg": {
           from: { scale: "0" },
-          to: { scale: "8" },
+          to: { scale: "10" },
         },
       },
     },
