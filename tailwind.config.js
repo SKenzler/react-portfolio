@@ -2,7 +2,22 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: (theme) => ({
+        blob: "url('src/assets/bgd-blob.png')",
+      }),
+      // Define animation class
+      animation: {
+        "scale-blob": "scale-bg 12000ms linear forwards",
+      },
+      // Define keyframe1
+      keyframes: {
+        "scale-bg": {
+          from: { scale: "0" },
+          to: { scale: "8" },
+        },
+      },
+    },
   },
   plugins: [],
 };
