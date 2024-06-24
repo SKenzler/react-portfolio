@@ -37,7 +37,7 @@ const Projects = () => {
 
         <ProjectCarousel images={images} />
 
-        <div className="w-full flex justify-center mt-10">
+        <div className="w-full flex justify-center mt-20">
           <FlipCard cards={cards} />
         </div>
         <Footer />
