@@ -36,7 +36,7 @@ const Contact = () => {
               <br />I am looking for opportunities to join an agile, innovative
               team with a culture that encourages growth and collaboration.
             </p>
-            <form className="w-full lg:w-80 flex flex-col justify-start items-start px-5 mt-4">
+            <form className="w-80 flex flex-col justify-start items-start px-5 mt-4">
               <label
                 htmlFor="name-feild"
                 className="text-[#C9C9C9] text-start text-sm mb-2"

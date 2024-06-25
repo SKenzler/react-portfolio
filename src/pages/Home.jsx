@@ -12,7 +12,7 @@ const Home = () => {
       <div className="flex flex-col justify-center items-center h-screen w-full">
         {" "}
         <Navbar />
-        <div className="flex flex-col md:flex-row justify-center items-center text-center mt-80 md:mt-28">
+        <div className="flex flex-col-reverse md:flex-row justify-center items-center text-center mt-80 md:mt-28">
           <motion.div
             className="w-3/4 flex flex-col justify-center items-center text-[#C9C9C9] mt-5 p-5"
             initial={{ opacity: 0 }}
@@ -32,7 +32,7 @@ const Home = () => {
             <Link to="https://github.com/SKenzler" target="_blank">
               <button
                 type="button"
-                className="flex justify-between items-center border-2 border-yellow-400 px-5 py-2 text-yellow-400 text-center text-base tracking-wide gap-4 font-normal rounded-md mt-5 cursor-pointer hover:border-[#C9C9C9] hover:text-[#C9C9C9]"
+                className="w-auto flex justify-between items-center border-2 border-yellow-400 px-5 py-2 text-yellow-400 text-center text-base tracking-wide gap-4 font-normal rounded-md mt-5 cursor-pointer hover:border-[#C9C9C9] hover:text-[#C9C9C9]"
               >
                 <FaGithub size={25} />
                 Check out my Github
@@ -47,13 +47,13 @@ const Home = () => {
               transition: { duration: 2, delay: 3, ease: easeInOut },
             }}
             viewport={{ once: true }}
-            className="w-full sm:w-2/4 object-fill"
+            className="w-full sm:w-2/4 object-fill mt-20"
             src={heroImage}
             alt="Profile Hero Image"
           />
         </div>
+        <Footer />
       </div>
-      <Footer />
     </>
   );
 };
