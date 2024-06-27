@@ -9,6 +9,7 @@ import profileImage from "../assets/profile-picture.png";
 import aboutDesign from "../assets/about-page-design.png";
 import aboutBuild from "../assets/about-page-vscode.png";
 import aboutDeploy from "../assets/about-page-react.png";
+import skills from "../utilities/skills";
 
 const About = () => {
   return (
@@ -53,46 +54,15 @@ const About = () => {
             alt="Profile Image"
           />
         </div>
-        <h1 className="flex justify-center items-center text-3xl text-[#C9C9C9] text-center tracking-wide">
+        <h1 className="flex justify-center items-center text-3xl text-[#C9C9C9] text-center tracking-wide p-5">
           My Skillset
         </h1>
-        <ul className="grid grid-cols-3 md:grid-cols-6 justify-center items-center gap-8 text-[#C9C9C9] text-sm text-center p-5 my-4">
-          <li className="flex w-[6em] h-[6em] bg-[#C9C9C9] justify-center items-center rounded-lg text-[#101824] font-semibold hover:scale-90 hover:bg-yellow-400 p-1">
-            HTML5
-          </li>
-          <li className="flex w-[6em] h-[6em] bg-[#C9C9C9] justify-center items-center rounded-lg text-[#101824] font-semibold hover:scale-90 hover:bg-yellow-400 p-1">
-            CSS3
-          </li>
-          <li className="flex w-[6em] h-[6em] bg-[#C9C9C9] justify-center items-center rounded-lg text-[#101824] font-semibold hover:scale-90 hover:bg-yellow-400 p-1">
-            JavaScript
-          </li>
-          <li className="flex w-[6em] h-[6em] bg-[#C9C9C9] justify-center items-center rounded-lg text-[#101824] font-semibold hover:scale-90 hover:bg-yellow-400 p-1">
-            React JS
-          </li>{" "}
-          <li className="flex w-[6em] h-[6em] bg-[#C9C9C9] justify-center items-center rounded-lg text-[#101824] font-semibold hover:scale-90 hover:bg-yellow-400 p-1">
-            Bootstrap
-          </li>
-          <li className="flex w-[6em] h-[6em] bg-[#C9C9C9] justify-center items-center rounded-lg text-[#101824] font-semibold hover:scale-90 hover:bg-yellow-400 p-1">
-            Tailwind CSS
-          </li>
-          <li className="flex w-[6em] h-[6em] bg-[#C9C9C9] justify-center items-center rounded-lg text-[#101824] font-semibold hover:scale-90 hover:bg-yellow-400 p-1">
-            Framer Motion
-          </li>
-          <li className="flex w-[6em] h-[6em] bg-[#C9C9C9] justify-center items-center rounded-lg text-[#101824] font-semibold hover:scale-90 hover:bg-yellow-400 p-1">
-            npm
-          </li>
-          <li className="flex w-[6em] h-[6em] bg-[#C9C9C9] justify-center items-center rounded-lg text-[#101824] font-semibold hover:scale-90 hover:bg-yellow-400 p-1">
-            Git
-          </li>
-          <li className="flex w-[6em] h-[6em] bg-[#C9C9C9] justify-center items-center rounded-lg text-[#101824] font-semibold hover:scale-90 hover:bg-yellow-400 p-1">
-            GitHub
-          </li>
-          <li className="flex w-[6em] h-[6em] bg-[#C9C9C9] justify-center items-center rounded-lg text-[#101824] font-semibold hover:scale-90 hover:bg-yellow-400 p-1">
-            VsCode
-          </li>
-          <li className="flex w-[6em] h-[6em] bg-[#C9C9C9] justify-center items-center rounded-lg text-[#101824] font-semibold hover:scale-90 hover:bg-yellow-400 p-1">
-            Figma
-          </li>
+        <ul className="grid grid-cols-3 md:grid-cols-6 bg-[#C9C9C9] justify-center items-center gap-8 text-[#C9C9C9] text-sm text-center p-5 my-4">
+          {skills.map(() => (
+            <li className="flex w-[6em] h-[6em] justify-center items-center rounded-lg text-[#101824] font-semibold hover:scale-90 hover:bg-yellow-400 p-1">
+              {skills.icon} {skills.header}
+            </li>
+          ))}
         </ul>
         <SkillSlider />
 
