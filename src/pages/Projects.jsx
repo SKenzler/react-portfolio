@@ -24,19 +24,16 @@ const Projects = () => {
           </h1>
         </div>
         <h1 className="w-full text-3xl text-[#C9C9C9] text-center font-normal px-5 mt-4">
-          Design Concepts and Personal Projects
+          My Design Concepts and Personal Projects
         </h1>
         <div className="w-4/6 text-base text-[#C9C9C9] text-pretty mt-8">
           Using a mobile first design approach, my aim is to create high impact,
           clean and creative designs. The design process Figma wireframes,
           components and protypes.
-          <br />
-          <br />
-          Personal Prjects built using React.
         </div>
-
-        <ProjectCarousel images={images} />
-
+        <div className="flex relative w-full justify-center items-center overflow-hidden">
+          <ProjectCarousel images={images} />
+        </div>
         <div className="w-full flex justify-center mt-20">
           <FlipCard cards={cards} />
         </div>

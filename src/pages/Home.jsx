@@ -32,7 +32,7 @@ const Home = () => {
             <Link to="https://github.com/SKenzler" target="_blank">
               <button
                 type="button"
-                className="w-auto flex justify-between items-center border-2 border-yellow-400 px-5 py-2 text-yellow-400 text-center text-base tracking-wide gap-4 font-normal rounded-md mt-5 cursor-pointer hover:border-[#C9C9C9] hover:text-[#C9C9C9]"
+                className="w-full flex justify-between items-center border-2 border-yellow-400 px-5 py-2 text-yellow-400 text-center text-base tracking-wide gap-4 font-normal rounded-md mt-5 cursor-pointer hover:border-[#C9C9C9] hover:text-[#C9C9C9]"
               >
                 <FaGithub size={25} />
                 Check out my Github
