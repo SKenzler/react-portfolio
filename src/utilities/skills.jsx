@@ -14,73 +14,73 @@ import { SiFramer, SiTailwindcss } from "react-icons/si";
 const skills = [
   {
     id: Date.now().toString(36) + Math.random().toString(36),
-    icon: <DiHtml5 />,
+    icon: <DiHtml5 size={28} />,
     heading: "HTML5",
   },
 
   {
     id: Date.now().toString(36) + Math.random().toString(36),
-    icon: <DiCss3 />,
+    icon: <DiCss3 size={28} />,
     heading: "CSS3",
   },
 
   {
     id: Date.now().toString(36) + Math.random().toString(36),
-    icon: <DiJsBadge />,
+    icon: <DiJsBadge size={28} />,
     heading: "JavaScript",
   },
 
   {
     id: Date.now().toString(36) + Math.random().toString(36),
-    icon: <DiReact />,
+    icon: <DiReact size={28} />,
     heading: "React JS",
   },
 
   {
     id: Date.now().toString(36) + Math.random().toString(36),
-    icon: <DiBootstrap />,
+    icon: <DiBootstrap size={28} />,
     heading: "Bootstrap",
   },
 
   {
     id: Date.now().toString(36) + Math.random().toString(36),
-    icon: <SiTailwindcss />,
+    icon: <SiTailwindcss size={28} />,
     heading: "Tailwind CSS",
   },
 
   {
     id: Date.now().toString(36) + Math.random().toString(36),
-    icon: <SiFramer />,
+    icon: <SiFramer size={28} />,
     heading: "Framer Motion",
   },
 
   {
     id: Date.now().toString(36) + Math.random().toString(36),
-    icon: <DiNpm />,
+    icon: <DiNpm size={28} />,
     heading: "npm",
   },
 
   {
     id: Date.now().toString(36) + Math.random().toString(36),
-    icon: <FaGitAlt />,
+    icon: <FaGitAlt size={28} />,
     heading: "Git",
   },
 
   {
     id: Date.now().toString(36) + Math.random().toString(36),
-    icon: <DiGithubBadge />,
+    icon: <DiGithubBadge size={28} />,
     heading: "GitHub",
   },
 
   {
     id: Date.now().toString(36) + Math.random().toString(36),
-    icon: <DiVisualstudio />,
+    icon: <DiVisualstudio size={28} />,
     heading: "VsCode",
   },
 
   {
     id: Date.now().toString(36) + Math.random().toString(36),
-    icon: <FaFigma />,
+    icon: <FaFigma size={28} />,
     heading: "Figma",
   },
 ];

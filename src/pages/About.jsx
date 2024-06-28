@@ -57,10 +57,13 @@ const About = () => {
         <h1 className="flex justify-center items-center text-3xl text-[#C9C9C9] text-center tracking-wide p-5">
           My Skillset
         </h1>
-        <ul className="grid grid-cols-3 md:grid-cols-6 bg-[#C9C9C9] justify-center items-center gap-8 text-[#C9C9C9] text-sm text-center p-5 my-4">
-          {skills.map(() => (
-            <li className="flex w-[6em] h-[6em] justify-center items-center rounded-lg text-[#101824] font-semibold hover:scale-90 hover:bg-yellow-400 p-1">
-              {skills.icon} {skills.header}
+        <ul className="grid grid-cols-3 md:grid-cols-6 bg-[#C9C9C9] justify-center items-center gap-8 text-[#C9C9C9] text-sm text-center px-5 m-4">
+          {skills.map((item) => (
+            <li
+              key={item.id}
+              className="flex flex-col w-[6em] h-[6em] justify-center items-center rounded-lg text-[#101824] font-semibold hover:scale-90 hover:bg-yellow-400 p-2"
+            >
+              {item.icon} {item.heading}
             </li>
           ))}
         </ul>
