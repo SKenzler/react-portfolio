@@ -1,9 +1,8 @@
 import React from "react";
-import { easeIn, easeInOut, motion } from "framer-motion";
+import { easeInOut, motion } from "framer-motion";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import SkillSlider from "../components/SkillSlider";
-import { FaCircleRight } from "react-icons/fa6";
 import contactImage from "../assets/glasses-image.png";
 import profileImage from "../assets/profile-picture.png";
 import aboutDesign from "../assets/about-page-design.png";
@@ -34,22 +33,20 @@ const About = () => {
             <p className="text-base text-[#C9C9C9] font-normal text-pretty tracking-wide p-4">
               I have been a web developer for the last two years. My central
               focus is building web apps that engage the user and provide them
-              with an impacting experience. Moving away from static designs, my
-              approach involves incorporating user interaction, subtle animation
-              clear navigation and enable the user to complete the task
-              required. <br /> <br />I design, build and deploy creative web
-              apps using React JS, Tailwind CSS and Framer Motion. My skill set
-              includes a solid grounding in HTML5, CSS3, JavaScript and React
-              JS. I have strong programming principles attained from my Bachelor
-              Degree in Computer Science, enabling me to apply these skills
-              toward the completion of personal projects.
+              with an impacting user experience. Moving away from static
+              designs, my approach involves incorporating user interaction,
+              subtle animation and clear navigation and enable the user to
+              complete the task required. <br /> <br />I design, build and
+              deploy creative web apps using React JS, Tailwind CSS and Framer
+              Motion. My Bachelor Degree in Computer Science enables me to apply
+              programming principles toward the completion of personal projects.
             </p>
           </div>
           <motion.img
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
+            initial={{ x: 100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 2, delay: 1, ease: easeInOut }}
-            className="flex flex-shrink-0 justify-end items-center w-3/4 object-cover sm:w-80 p-4 mx-10"
+            className="flex flex-shrink-0 justify-end items-center rounded-full w-3/4 object-cover sm:w-80 mx-10"
             src={profileImage}
             alt="Profile Image"
           />
@@ -87,12 +84,12 @@ const About = () => {
               viewport={{ once: true }}
             >
               <img
-                className="w-50 object-fill bg-gray-200"
+                className="w-72 object-cover object-center"
                 src={aboutDesign}
                 alt="Portfolio Landing Pages with Figma logo"
               />
             </motion.div>
-            <div className="w-full flex justify-start items-start text-sm text-[#C9C9C9] text-justify tracking-wide p-5">
+            <div className="w-full flex justify-start items-start text-sm text-[#C9C9C9] text-pretty tracking-wide p-5">
               <p>
                 The first step in my development process is to produce
                 wireframes, components, design layouts, style guides and
@@ -116,7 +113,7 @@ const About = () => {
               viewport={{ once: true }}
             >
               <img
-                className="w-50 object-fill bg-gray-200"
+                className="w-full object-fill"
                 src={aboutBuild}
                 alt="Code snippets with React logo"
               />
@@ -141,7 +138,7 @@ const About = () => {
               viewport={{ once: true }}
             >
               <img
-                className="w-50 object-fill bg-gray-200"
+                className="w-full object-fill"
                 src={aboutDeploy}
                 alt="Portfolio Landing Pages with Figma logo"
               />
