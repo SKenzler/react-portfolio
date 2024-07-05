@@ -51,7 +51,7 @@ const SkillSlider = () => {
             className="flex-shrink-0 px-10"
             style={{ width: `${100 / skills.length}%` }}
           >
-            <div className="flex flex-col items-center justify-center h-full text-[#C9C9C9] text-5xl">
+            <div className="flex flex-col items-center justify-center h-full text-[#C9C9C9] text-4xl">
               {skill.icon}
             </div>
           </div>
