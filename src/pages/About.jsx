@@ -9,6 +9,9 @@ import aboutDesign from "../assets/about-page-design.png";
 import aboutBuild from "../assets/about-page-vscode.png";
 import aboutDeploy from "../assets/about-page-react.png";
 import reactLogo from "../assets/dev-logo-react.png";
+import figmaLogo from "../assets/dev-logo-figma.png";
+import vscodeLogo from "../assets/dev-logo-vscode.png";
+import aboutBgd from "../assets/about-bgd.jpg";
 import skills from "../utilities/skills";
 
 const About = () => {
@@ -26,9 +29,9 @@ const About = () => {
             Who <span className="font-normal text-xl">is this guy?</span>
           </h1>
         </div>
-        <div className="w-10/12 flex flex-col lg:flex-row justify-center items-center border-b-2 border-yellow-400 p-5 m-8">
+        <div className="w-10/12 flex flex-col lg:flex-row justify-center items-center p-5 m-8">
           <div className="flex flex-col mb-5">
-            <h1 className="text-3xl text-[#C9C9C9] text-center font-normal px-2">
+            <h1 className="text-2xl text-[#C9C9C9] text-start font-bold px-2">
               I'm a Frontend Developer from Perth, Australia.
             </h1>
             <p className="text-base text-[#C9C9C9] font-normal text-pretty tracking-wide p-4">
@@ -51,10 +54,10 @@ const About = () => {
             alt="Profile Image"
           />
         </div>
-        <h1 className="flex justify-center items-center text-3xl text-[#C9C9C9] text-center tracking-wide p-5">
+        <h1 className="flex justify-center items-center text-2xl text-[#C9C9C9] text-center tracking-wide p-5">
           My Skillset
         </h1>
-        <ul className="grid grid-cols-3 md:grid-cols-6 bg-[#C9C9C9] justify-center items-center gap-8 text-[#C9C9C9] text-sm text-center px-5 m-4">
+        <ul className="grid grid-cols-3 md:grid-cols-6 justify-center items-center gap-8 text-[#C9C9C9] text-sm text-center bg-[url('src/assets/about-bgd.jpg')] object-cover object-left-bottom p-5 m-4">
           {skills.map((item) => (
             <li
               key={item.id}
@@ -66,14 +69,11 @@ const About = () => {
         </ul>
         <SkillSlider />
 
-        <h1 className="w-4/6 text-3xl text-[#C9C9C9] text-center font-normal mt-10">
+        <h1 className="w-4/6 text-2xl text-[#C9C9C9] text-center font-normal mt-10">
           My Development Process
         </h1>
         <div className="w-10/12 flex flex-col lg:flex-row justify-center gap-8 items-center p-2">
-          <div className="w-72 h-[28em] sm:w-1/4 flex flex-col shadow-lg shadow-black my-10 hover:scale-105">
-            <h1 className="text-3xl text-[#C9C9C9] text-center uppercase font-semibold py-2">
-              Design
-            </h1>
+          <div className="w-72 h-[28em] sm:w-1/4 flex flex-col border-2 border-[#C9C9C9] rounded-lg shadow-lg shadow-black my-10 hover:scale-105">
             <motion.div
               className="flex justify-center"
               initial={{ opacity: 0, x: -20 }}
@@ -85,23 +85,34 @@ const About = () => {
               viewport={{ once: true }}
             >
               <img
-                className="w-full object-fill"
+                className="w-full object-fill p-2"
                 src={aboutDesign}
                 alt="Portfolio Landing Pages with Figma logo"
               />
             </motion.div>
-            <div className="w-full flex flex-col justify-start items-start text-sm text-[#C9C9C9] text-pretty tracking-wide p-5">
+            <h1 className="text-2xl text-yellow-400 text-center uppercase font-semibold py-2">
+              Design
+            </h1>
+            <div className="w-full flex justify-start items-start text-sm text-[#C9C9C9] text-pretty tracking-wide px-4">
               <p>
                 Using a mobile first design approach to produce wireframes,
                 components, design layouts, style guides and prototypes in Figma
                 to make design decisions.
               </p>
+              <motion.img
+                initial={{ opacity: 0 }}
+                whileInView={{
+                  opacity: 1,
+                  transition: { duration: 1, delay: 1 },
+                }}
+                viewport={{ once: true }}
+                src={figmaLogo}
+                className="w-20 m-auto"
+                alt="Figma Logo"
+              />
             </div>
           </div>
-          <div className="w-72 h-[28em] sm:w-1/4 flex flex-col shadow-lg shadow-black hover:scale-105 my-10">
-            <h1 className="text-3xl text-[#C9C9C9] text-center uppercase font-semibold py-2">
-              Build
-            </h1>
+          <div className="w-72 h-[28em] sm:w-1/4 flex flex-col border-2 border-[#C9C9C9] rounded-lg shadow-lg shadow-black my-10 hover:scale-105">
             <motion.div
               className="flex justify-center"
               initial={{ opacity: 0, x: -20 }}
@@ -113,22 +124,33 @@ const About = () => {
               viewport={{ once: true }}
             >
               <img
-                className="w-full object-fill"
+                className="w-full object-fill p-2"
                 src={aboutBuild}
-                alt="Code snippets with React logo"
+                alt="React code with React logo"
               />
             </motion.div>
-            <div className="w-full flex justify-start items-start text-sm text-[#C9C9C9] text-pretty tracking-wide p-5">
+            <h1 className="text-2xl text-yellow-400 text-center uppercase font-semibold py-2">
+              Build
+            </h1>
+            <div className="w-full flex justify-start items-start text-sm text-[#C9C9C9] text-pretty tracking-wide px-4">
               <p>
-                Building in VsCode, React JS, Tailwind CSS and Framer Motion.
+                The building process starts in Visual Studio Code. React JS is
+                my prefered Framework and Git is implemeted for version control.
               </p>
-              <img src={reactLogo} className="w-20" alt="React Logo" />
+              <motion.img
+                initial={{ opacity: 0 }}
+                whileInView={{
+                  opacity: 1,
+                  transition: { duration: 1, delay: 1 },
+                }}
+                viewport={{ once: true }}
+                src={vscodeLogo}
+                className="w-20 m-auto"
+                alt="VS Code Logo"
+              />
             </div>
           </div>
-          <div className="w-72 h-[28em] sm:w-1/4 flex flex-col shadow-lg shadow-black hover:scale-105 my-10">
-            <h1 className="text-3xl text-[#C9C9C9] text-center uppercase font-semibold py-2">
-              Deploy
-            </h1>
+          <div className="w-72 h-[28em] sm:w-1/4 flex flex-col border-2 border-[#C9C9C9] rounded-lg shadow-lg shadow-black my-10 hover:scale-105">
             <motion.div
               className="flex justify-center"
               initial={{ opacity: 0, x: -20 }}
@@ -140,16 +162,31 @@ const About = () => {
               viewport={{ once: true }}
             >
               <img
-                className="w-full object-fill"
+                className="w-full object-fill p-2"
                 src={aboutDeploy}
                 alt="Portfolio Landing Pages with Figma logo"
               />
             </motion.div>
-            <div className="w-full flex justify-start items-start text-sm text-[#C9C9C9] text-pretty tracking-wide p-5">
+            <h1 className="text-2xl text-yellow-400 text-center uppercase font-semibold py-2">
+              Deploy
+            </h1>
+            <div className="w-full flex justify-start items-start text-sm text-[#C9C9C9] text-pretty tracking-wide px-4">
               <p>
-                Deploy the finshed project using GitHub Actions workflows to
-                automatically trigger with every push command.
+                The final build is then deployed to GitHub pages using Workflow
+                action the triggers a deploy with every push request to the
+                remote repositiory.
               </p>
+              <motion.img
+                initial={{ opacity: 0 }}
+                whileInView={{
+                  opacity: 1,
+                  transition: { duration: 1, delay: 1 },
+                }}
+                viewport={{ once: true }}
+                src={reactLogo}
+                className="w-20 m-auto"
+                alt="Raect Logo"
+              />
             </div>
           </div>
         </div>
