@@ -9,23 +9,23 @@ import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <>
-      <div className="flex flex-col justify-center items-center h-screen w-full">
+      <Navbar />
+      <div className="w-full h-full flex flex-col justify-center items-center">
         {" "}
-        <Navbar />
-        <div className="flex flex-col-reverse md:flex-row justify-center items-center text-center mt-80 md:mt-28">
+        <div className="w-full flex flex-col-reverse md:flex-row justify-center items-center text-center overflow-hidden">
           <motion.div
-            className="w-3/4 flex flex-col justify-center items-center text-[#C9C9C9] mt-5 p-5"
+            className="w-3/4 sm:w-9/12 flex flex-col justify-center items-center text-[#C9C9C9] mt-5 p-5"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 2, delay: 2, ease: easeIn }}
+            transition={{ duration: 2, delay: 1, ease: easeIn }}
           >
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-medium tracking-wide p-2">
+            <h1 className="text-5xl sm:text-6xl lg:text-[4rem] font-medium tracking-wide p-2">
               Frontend <span className="font-black uppercase">Developer</span>
             </h1>
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-normal uppercase p-2">
               Shane <span className="text-yellow-400 font-bold">Kenzler</span>
             </h2>
-            <p className="text-sm sm:text-base lg:text-lg text-[#C9C9C9] font-light p-2">
+            <p className="w-9/12 text-sm sm:text-base text-[#C9C9C9] font-light p-2">
               I design, build and deploy responsive web apps using React JS,
               Tailwind CSS and Framer Motion
             </p>
@@ -44,10 +44,15 @@ const Home = () => {
             whileInView={{
               opacity: 1,
               x: 0,
-              transition: { duration: 2, delay: 3, ease: easeInOut },
+              transition: {
+                type: "spring",
+                mass: 0.75,
+                stiffness: 300,
+                delay: 4,
+              },
             }}
             viewport={{ once: true }}
-            className="w-full sm:w-2/4 object-fill mt-20"
+            className="w-full sm:w-6/12 object-fill mt-20"
             src={heroImage}
             alt="Profile Hero Image"
           />

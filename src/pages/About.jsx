@@ -11,7 +11,6 @@ import aboutDeploy from "../assets/about-page-react.png";
 import reactLogo from "../assets/dev-logo-react.png";
 import figmaLogo from "../assets/dev-logo-figma.png";
 import vscodeLogo from "../assets/dev-logo-vscode.png";
-import aboutBgd from "../assets/about-bgd.jpg";
 import skills from "../utilities/skills";
 
 const About = () => {
@@ -19,7 +18,7 @@ const About = () => {
     <>
       <Navbar />
       <div className="w-full h-full flex flex-col justify-center items-center">
-        <div className="flex justify-center items-center w-full bg-yellow-400 my-4">
+        <div className="flex justify-center items-center w-full bg-yellow-400 mt-10">
           <img
             className="w-20 h-20 object-contain mx-2"
             src={contactImage}
@@ -31,8 +30,9 @@ const About = () => {
         </div>
         <div className="w-10/12 flex flex-col lg:flex-row justify-center items-center p-5 m-8">
           <div className="flex flex-col mb-5">
-            <h1 className="text-2xl text-[#C9C9C9] text-start font-bold px-2">
-              I'm a Frontend Developer from Perth, Australia.
+            <h1 className="text-2xl text-[#C9C9C9] text-center font-normal p-2">
+              I'm a <span className="text-yellow-400">Frontend</span> Developer
+              from Perth, Australia.
             </h1>
             <p className="text-base text-[#C9C9C9] font-normal text-pretty tracking-wide p-4">
               I have been a web developer for the last two years. My central
@@ -45,35 +45,27 @@ const About = () => {
               principles toward the completion of personal projects.
             </p>
           </div>
-          <motion.img
-            initial={{ x: 100, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            transition={{ duration: 2, delay: 1, ease: easeInOut }}
-            className="flex flex-shrink-0 justify-center items-center w-3/4 object-contain sm:w-80 mx-10"
-            src={profileImage}
-            alt="Profile Image"
-          />
         </div>
         <h1 className="flex justify-center items-center text-2xl text-[#C9C9C9] text-center tracking-wide p-5">
-          My Skillset
+          My <span className="text-yellow-400">&nbsp; Skillset</span>
         </h1>
-        <ul className="grid grid-cols-3 md:grid-cols-6 justify-center items-center gap-8 text-[#C9C9C9] text-sm text-center bg-[url('src/assets/about-bgd.jpg')] object-cover object-left-bottom p-5 m-4">
+        <SkillSlider />
+        <ul className="grid grid-cols-3 md:grid-cols-6 justify-center items-center gap-8 text-[#C9C9C9] text-sm text-center p-5 m-4">
           {skills.map((item) => (
             <li
               key={item.id}
-              className="flex flex-col w-[6em] h-[6em] justify-center items-center rounded-lg text-[#101824] font-semibold hover:scale-90 p-2"
+              className="flex flex-col w-[6em] h-[6em] justify-center items-center rounded-lg text-[#C9C9C9] font-semibold hover:scale-90 p-2"
             >
               {item.icon} {item.heading}
             </li>
           ))}
         </ul>
-        <SkillSlider />
 
         <h1 className="w-4/6 text-2xl text-[#C9C9C9] text-center font-normal mt-10">
-          My Development Process
+          My <span className="text-yellow-400">Development</span> Process
         </h1>
-        <div className="w-10/12 flex flex-col lg:flex-row justify-center gap-8 items-center p-2">
-          <div className="w-72 h-[28em] sm:w-1/4 flex flex-col border-2 border-[#C9C9C9] rounded-lg shadow-lg shadow-black my-10 hover:scale-105">
+        <div className="w-full flex flex-col lg:flex-row justify-center gap-10 items-center p-2">
+          <div className="w-72 h-[28em] flex flex-col border-2 border-[#C9C9C9] rounded-lg shadow-lg shadow-black hover:scale-105">
             <motion.div
               className="flex justify-center"
               initial={{ opacity: 0, x: -20 }}
@@ -112,7 +104,7 @@ const About = () => {
               />
             </div>
           </div>
-          <div className="w-72 h-[28em] sm:w-1/4 flex flex-col border-2 border-[#C9C9C9] rounded-lg shadow-lg shadow-black my-10 hover:scale-105">
+          <div className="w-72 h-[28em] flex flex-col border-2 border-[#C9C9C9] rounded-lg shadow-lg shadow-black my-10 hover:scale-105">
             <motion.div
               className="flex justify-center"
               initial={{ opacity: 0, x: -20 }}
@@ -150,7 +142,7 @@ const About = () => {
               />
             </div>
           </div>
-          <div className="w-72 h-[28em] sm:w-1/4 flex flex-col border-2 border-[#C9C9C9] rounded-lg shadow-lg shadow-black my-10 hover:scale-105">
+          <div className="w-72 h-[28em] flex flex-col border-2 border-[#C9C9C9] rounded-lg shadow-lg shadow-black my-10 hover:scale-105">
             <motion.div
               className="flex justify-center"
               initial={{ opacity: 0, x: -20 }}

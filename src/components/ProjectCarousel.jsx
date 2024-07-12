@@ -75,7 +75,7 @@ const ProjectCarousel = ({ images }) => {
   };
 
   return (
-    <div className="w-100 h-80 sm:h-[480px] sm:w-[30em] flex justify-center items-center mt-10">
+    <div className="w-100 h-80 sm:h-[480px] sm:w-[30em] flex justify-center items-center mt-5">
       <AnimatePresence>
         {images.map((item, index) => (
           <motion.img

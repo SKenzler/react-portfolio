@@ -11,20 +11,21 @@ const Contact = () => {
     <>
       <div className="w-full h-full flex flex-col justify-center items-center">
         <Navbar />
-        <div className="flex justify-center items-center w-full bg-yellow-400 my-4">
+        <div className="flex justify-center items-center w-full bg-yellow-400 mt-10">
           <img
             className="w-20 h-20 object-contain mx-2"
             src={contactImage}
             alt="Contact glasses graphic"
           />
-          <h1 className="font-semibold text-2xl ">
+          <h1 className="font-semibold text-2xl">
             Get <span className="font-normal text-xl">in touch</span>
           </h1>
         </div>
-        <div className="w-full lg:w-9/12 flex flex-col md:flex-row justify-center items-center p-2">
-          <div className="w-full flex flex-col mx-10">
-            <h1 className="w-full text-3xl text-[#C9C9C9] text-start font-normal tracking-wide px-5 mt-4">
-              Let's make a time to chat.
+        <div className="w-full lg:w-9/12 flex flex-col md:flex-row justify-center items-center p-2 mt-10">
+          <div className="w-4/5 flex flex-col mx-10">
+            <h1 className="text-2xl text-[#C9C9C9] text-start font-normal tracking-wide px-5 mt-4">
+              Let's make a time to{" "}
+              <span className="text-yellow-400">chat.</span>
             </h1>
             <div className="w-full flex px-5 mt-2">
               <FaEnvelope size={"1.4rem"} color="#C9C9C9" />
@@ -73,8 +74,8 @@ const Contact = () => {
                 name="message-feild"
                 id="message-feild"
                 placeholder="message"
-                rows="5"
-                cols="40"
+                rows="6"
+                cols="35"
                 className="shadow shadow-black text-sm text-black placeholder-black appearance-none focus:outline-none rounded px-2 py-1 mb-2"
               ></textarea>
               <button

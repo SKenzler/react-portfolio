@@ -12,7 +12,7 @@ const Projects = () => {
     <>
       <div className="w-full h-full flex flex-col justify-center items-center">
         <Navbar />
-        <div className="flex justify-center items-center w-full bg-yellow-400 my-4">
+        <div className="flex justify-center items-center w-full bg-yellow-400 mt-10">
           <img
             className="w-20 h-20 object-contain mx-2"
             src={contactImage}
@@ -23,8 +23,8 @@ const Projects = () => {
             <span className="font-normal text-xl">designs and projects</span>
           </h1>
         </div>
-        <h1 className="w-full text-3xl text-[#C9C9C9] text-center font-normal px-5 mt-4">
-          My Design Concepts and Personal Projects
+        <h1 className="w-full text-2xl text-[#C9C9C9] text-center font-normal px-5 mt-10">
+          My <span className="text-yellow-400">Design</span>&nbsp;Concepts
         </h1>
         <div className="w-4/6 text-base text-[#C9C9C9] text-pretty mt-8">
           Using a mobile first design approach, my aim is to create high impact,
@@ -34,7 +34,10 @@ const Projects = () => {
         <div className="flex relative w-full justify-center items-center overflow-hidden">
           <ProjectCarousel images={images} />
         </div>
-        <div className="w-full flex justify-center mt-20">
+        <h1 className="w-full text-2xl text-[#C9C9C9] text-center font-normal mt-16">
+          My Personal <span className="text-yellow-400">Projects</span>
+        </h1>
+        <div className="w-full flex justify-center mt-10">
           <FlipCard cards={cards} />
         </div>
         <Footer />

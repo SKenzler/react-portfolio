@@ -14,7 +14,7 @@ const TimeDisplay = () => {
 
   return (
     <div className="w-24 text-[#C9C9C9] text-sm px-2 mx-5">
-      {date.toLocaleTimeString()}
+      {date.toLocaleTimeString([], { timeStyle: "short" })}
     </div>
   );
 };
