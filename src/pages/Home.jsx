@@ -25,7 +25,7 @@ const Home = () => {
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-normal uppercase p-2">
               Shane <span className="text-yellow-400 font-bold">Kenzler</span>
             </h2>
-            <p className="w-9/12 text-sm sm:text-base text-[#C9C9C9] font-light p-2">
+            <p className="w-11/12 sm:w-8/12 text-sm sm:text-base text-[#C9C9C9] font-light tracking-wide p-2">
               I design, build and deploy responsive web apps using React JS,
               Tailwind CSS and Framer Motion
             </p>
@@ -45,7 +45,7 @@ const Home = () => {
               opacity: 1,
               x: 0,
               transition: {
-                duration: 4,
+                duration: 3,
                 delay: 2,
                 ease: easeInOut,
               },

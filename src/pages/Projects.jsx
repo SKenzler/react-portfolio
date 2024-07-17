@@ -26,18 +26,22 @@ const Projects = () => {
         <h1 className="w-full text-2xl text-[#C9C9C9] text-center font-normal px-5 mt-10">
           My <span className="text-yellow-400">Design</span>&nbsp;Concepts
         </h1>
-        <div className="w-4/6 text-base text-[#C9C9C9] text-pretty mt-8">
-          Using a mobile first design approach, my aim is to create high impact,
-          clean and creative designs. The design process Figma wireframes,
-          components and protypes.
+        <div className="w-5/12 text-sm text-[#C9C9C9] text-center font-normal text-pretty mt-8">
+          Using a mobile first design approach, I create UI concepts and designs
+          before building even starts. Browse through some of my recent work.
         </div>
         <div className="flex relative w-full justify-center items-center overflow-hidden">
           <ProjectCarousel images={images} />
         </div>
-        <h1 className="w-full text-2xl text-[#C9C9C9] text-center font-normal mt-16">
+        <h1 className="w-full text-2xl text-[#C9C9C9] text-center font-normal mt-10">
           My Personal <span className="text-yellow-400">Projects</span>
         </h1>
-        <div className="w-full flex justify-center mt-10">
+        <div className="w-5/12 text-sm text-[#C9C9C9] text-center font-normal text-pretty mt-8">
+          Building projects using the React JS library, I complete personal
+          projects to continiously develop my skills and knowledge base. Hover
+          over these recent builds to reveil an explanation for each.
+        </div>
+        <div className="w-full flex justify-center mt-14">
           <FlipCard cards={cards} />
         </div>
         <Footer />

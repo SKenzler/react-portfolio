@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 import { FaEnvelope } from "react-icons/fa6";
 import contactImage from "../assets/glasses-image.png";
 import yellowOffice from "../assets/yellow-office.png";
-import { easeInOut, motion } from "framer-motion";
+import { easeIn, motion } from "framer-motion";
 
 const Contact = () => {
   return (
@@ -21,8 +21,8 @@ const Contact = () => {
             Get <span className="font-normal text-xl">in touch</span>
           </h1>
         </div>
-        <div className="w-full lg:w-9/12 flex flex-col md:flex-row justify-center items-center p-2">
-          <div className="w-4/5 flex flex-col m-10">
+        <div className="w-full lg:w-9/12 flex flex-col md:flex-row justify-center items-center p-2 mt-10">
+          <div className="w-4/5 flex flex-col px-10">
             <h1 className="text-2xl text-[#C9C9C9] text-start font-normal tracking-wide px-5 mt-4">
               Let's make a time to{" "}
               <span className="text-yellow-400">chat.</span>
@@ -33,7 +33,7 @@ const Contact = () => {
                 &nbsp; shanekenzler@gmail.com
               </h6>
             </div>
-            <p className="w-7/12 text-[#C9C9C9] text-sm/6 font-light text-justify tracking-wide px-5">
+            <p className="w-full sm:7/12 text-[#C9C9C9] text-sm/6 font-light text-justify tracking-wide px-5">
               <br />I am looking for opportunities to join an agile, innovative
               team with a culture that encourages growth and collaboration.
             </p>
@@ -95,8 +95,8 @@ const Contact = () => {
           <motion.img
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 2, delay: 1, ease: easeInOut }}
-            className="flex justify-center items-center w-5/12 sm:w-60 rounded-lg mx-10 mt-8 lg:mt-0"
+            transition={{ duration: 3, delay: 1, ease: easeIn }}
+            className="flex justify-center items-center w-5/12 sm:w-52 rounded-lg mx-10 mt-8 lg:mt-1"
             src={yellowOffice}
             alt="Phone chat Image"
           />
