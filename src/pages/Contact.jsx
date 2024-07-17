@@ -11,18 +11,18 @@ const Contact = () => {
     <>
       <div className="w-full h-full flex flex-col justify-center items-center">
         <Navbar />
-        <div className="flex justify-center items-center w-full bg-yellow-400 mt-10">
+        <div className="w-full flex justify-center items-center bg-yellow-400 mt-10">
           <img
             className="w-20 h-20 object-contain mx-2"
             src={contactImage}
             alt="Contact glasses graphic"
           />
-          <h1 className="font-semibold text-2xl">
+          <h1 className="font-semibold text-2xl ">
             Get <span className="font-normal text-xl">in touch</span>
           </h1>
         </div>
-        <div className="w-full lg:w-9/12 flex flex-col md:flex-row justify-center items-center p-2 mt-10">
-          <div className="w-4/5 flex flex-col mx-10">
+        <div className="w-full lg:w-9/12 flex flex-col md:flex-row justify-center items-center p-2">
+          <div className="w-4/5 flex flex-col m-10">
             <h1 className="text-2xl text-[#C9C9C9] text-start font-normal tracking-wide px-5 mt-4">
               Let's make a time to{" "}
               <span className="text-yellow-400">chat.</span>
@@ -33,11 +33,16 @@ const Contact = () => {
                 &nbsp; shanekenzler@gmail.com
               </h6>
             </div>
-            <p className="w-9/12 text-[#C9C9C9] text-sm/6 font-light text-justify tracking-wide px-5">
+            <p className="w-7/12 text-[#C9C9C9] text-sm/6 font-light text-justify tracking-wide px-5">
               <br />I am looking for opportunities to join an agile, innovative
               team with a culture that encourages growth and collaboration.
             </p>
-            <form className="w-80 flex flex-col justify-start items-start px-5 mt-4">
+            <form
+              action="mailto:shanekenzler@gmail.com"
+              method="get"
+              enctype="text/plain"
+              className="w-full flex flex-col justify-center items-start rounded-lg p-5 mt-4"
+            >
               <label
                 htmlFor="name-feild"
                 className="text-[#C9C9C9] text-start text-sm mb-2"
@@ -79,7 +84,8 @@ const Contact = () => {
                 className="shadow shadow-black text-sm text-black placeholder-black appearance-none focus:outline-none rounded px-2 py-1 mb-2"
               ></textarea>
               <button
-                type="button"
+                type="submit"
+                value="submit"
                 className="flex justify-center items-center border-2 border-yellow-400 px-5 py-1 text-yellow-400 text-center text-sm tracking-wide gap-4 font-normal rounded-md my-5 cursor-pointer hover:border-[#C9C9C9] hover:text-[#C9C9C9]"
               >
                 Let's Chat
@@ -90,7 +96,7 @@ const Contact = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 2, delay: 1, ease: easeInOut }}
-            className="flex flex-shrink-0 justify-center items-center w-1/2 sm:w-64 rounded-lg mx-10 mt-8 lg:mt-0"
+            className="flex justify-center items-center w-5/12 sm:w-60 rounded-lg mx-10 mt-8 lg:mt-0"
             src={yellowOffice}
             alt="Phone chat Image"
           />

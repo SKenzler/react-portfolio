@@ -14,7 +14,7 @@ const Home = () => {
         {" "}
         <div className="w-full flex flex-col-reverse md:flex-row justify-center items-center text-center overflow-hidden">
           <motion.div
-            className="w-3/4 sm:w-9/12 flex flex-col justify-center items-center text-[#C9C9C9] mt-5 p-5"
+            className="w-3/4 sm:w-9/12 flex flex-col justify-center items-center text-[#C9C9C9] p-5"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 2, delay: 1, ease: easeIn }}
@@ -45,14 +45,13 @@ const Home = () => {
               opacity: 1,
               x: 0,
               transition: {
-                type: "spring",
-                mass: 0.75,
-                stiffness: 300,
-                delay: 4,
+                duration: 4,
+                delay: 2,
+                ease: easeInOut,
               },
             }}
             viewport={{ once: true }}
-            className="w-full sm:w-6/12 object-fill mt-20"
+            className="w-full sm:w-6/12 object-fill mt-2"
             src={heroImage}
             alt="Profile Hero Image"
           />
