@@ -24,7 +24,7 @@ const About = () => {
             src={contactImage}
             alt="Contact glasses graphic"
           />
-          <h1 className="font-semibold text-2xl ">
+          <h1 className="font-semibold text-2xl text-center">
             Who <span className="font-normal text-xl">is this guy?</span>
           </h1>
         </div>

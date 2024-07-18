@@ -17,7 +17,7 @@ const Contact = () => {
             src={contactImage}
             alt="Contact glasses graphic"
           />
-          <h1 className="font-semibold text-2xl ">
+          <h1 className="font-semibold text-2xl text-center">
             Get <span className="font-normal text-xl">in touch</span>
           </h1>
         </div>
@@ -33,7 +33,7 @@ const Contact = () => {
                 &nbsp; shanekenzler@gmail.com
               </h6>
             </div>
-            <p className="w-full sm:7/12 text-[#C9C9C9] text-sm/6 font-light text-justify tracking-wide px-5">
+            <p className="w-full sm:7/12 text-[#C9C9C9] text-sm/6 font-light text-pretty tracking-wide px-5">
               <br />I am looking for opportunities to join an agile, innovative
               team with a culture that encourages growth and collaboration.
             </p>
@@ -80,8 +80,7 @@ const Contact = () => {
                 id="message-feild"
                 placeholder="message"
                 rows="6"
-                cols="35"
-                className="shadow shadow-black text-sm text-black placeholder-black appearance-none focus:outline-none rounded px-2 py-1 mb-2"
+                className="resize-none w-72 shadow shadow-black text-sm text-black placeholder-black appearance-none focus:outline-none rounded px-2 py-1 mb-2"
               ></textarea>
               <button
                 type="submit"
@@ -96,7 +95,7 @@ const Contact = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 3, delay: 1, ease: easeIn }}
-            className="flex justify-center items-center w-5/12 sm:w-52 rounded-lg mx-10 mt-8 lg:mt-1"
+            className="hidden md:flex justify-center items-center w-3/12 sm:w-52 rounded-lg mx-10 mt-8 lg:mt-1"
             src={yellowOffice}
             alt="Phone chat Image"
           />

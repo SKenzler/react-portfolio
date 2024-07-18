@@ -18,7 +18,7 @@ const Projects = () => {
             src={contactImage}
             alt="Contact glasses graphic"
           />
-          <h1 className="font-semibold text-2xl ">
+          <h1 className="font-semibold text-2xl text-center">
             Some{" "}
             <span className="font-normal text-xl">designs and projects</span>
           </h1>
