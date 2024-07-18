@@ -2,8 +2,8 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
-
 import { Routes, Route, HashRouter } from "react-router-dom";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
