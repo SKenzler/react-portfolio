@@ -33,7 +33,7 @@ const Contact = () => {
                 &nbsp; shanekenzler@gmail.com
               </h6>
             </div>
-            <p className="w-full sm:7/12 text-[#C9C9C9] text-sm/6 font-light text-pretty tracking-wide px-5">
+            <p className="w-11/12 sm:w-7/12 text-[#C9C9C9] text-sm/6 font-light text-pretty tracking-wide px-5">
               <br />I am looking for opportunities to join an agile, innovative
               team with a culture that encourages growth and collaboration.
             </p>
@@ -80,7 +80,7 @@ const Contact = () => {
                 id="message-feild"
                 placeholder="message"
                 rows="6"
-                className="resize-none w-72 shadow shadow-black text-sm text-black placeholder-black appearance-none focus:outline-none rounded px-2 py-1 mb-2"
+                className="resize-none w-60 sm:w-72 shadow shadow-black text-sm text-black placeholder-black appearance-none focus:outline-none rounded px-2 py-1 mb-2"
               ></textarea>
               <button
                 type="submit"
