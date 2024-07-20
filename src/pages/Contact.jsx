@@ -38,9 +38,9 @@ const Contact = () => {
               team with a culture that encourages growth and collaboration.
             </p>
             <form
-              action="mailto:shanekenzler@gmail.com"
-              method="get"
-              enctype="text/plain"
+              action={async () => {
+                await sendEmail();
+              }}
               className="w-full flex flex-col justify-center items-start rounded-lg p-5 mt-4"
             >
               <label
