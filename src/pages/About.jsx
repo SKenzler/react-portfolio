@@ -2,9 +2,8 @@ import React from "react";
 import { easeIn, motion } from "framer-motion";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import SkillSlider from "../components/SkillSlider";
 import contactImage from "../assets/glasses-image.png";
-import profileImage from "../assets/profile-picture.png";
+import profileImage from "../assets/portfolio-image.png";
 import aboutDesign from "../assets/about-page-design.png";
 import aboutBuild from "../assets/about-page-vscode.png";
 import aboutDeploy from "../assets/about-page-react.png";
@@ -34,15 +33,30 @@ const About = () => {
               I'm a <span className="text-yellow-400">Frontend</span> Developer
               from Perth, Australia.
             </h1>
-            <p className="text-sm text-[#C9C9C9] font-normal text-pretty tracking-wide p-4">
-              I have been a web developer for the last two years. My central
-              focus is building web apps that engage the user and provide them
-              with an impacting user experience. My approach involves
-              incorporating user interaction and subtle animation to captivate
-              the audience. A Bachelor Degree in Computer Science enables me to
-              apply programming principles toward the completion of personal
-              projects.
-            </p>
+            <div className="flex flex-col md:flex-row w-full justify-center items-center mt-5">
+              <p className="w-full sm:w-7/12 text-sm text-[#C9C9C9] font-normal text-pretty tracking-wide p-4">
+                I have been a web developer for the last two years. My central
+                focus is building web apps that engage the user and provide them
+                with an impacting user experience. <br />
+                <br />
+                My approach involves incorporating user interaction and subtle
+                animation to captivate the audience. A Bachelor Degree in
+                Computer Science enables me to apply programming principles
+                toward the completion of personal projects.
+              </p>
+              <motion.img
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{
+                  opacity: 1,
+                  x: 0,
+                  transition: { duration: 2, delay: 1, ease: easeIn },
+                }}
+                viewport={{ once: true }}
+                className="flex justify-center items-center w-10/12 sm:w-5/12 object-contain mt-5 sm:mx-5"
+                src={profileImage}
+                alt="Profile Image with Development Icons"
+              />
+            </div>
           </div>
         </div>
         <h1 className="flex justify-center items-center text-2xl text-[#C9C9C9] text-center tracking-wide p-5">
