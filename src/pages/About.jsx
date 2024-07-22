@@ -45,21 +45,20 @@ const About = () => {
                 toward the completion of personal projects.
               </p>
               <motion.img
-                initial={{ opacity: 0, x: -20 }}
+                initial={{ opacity: 0 }}
                 whileInView={{
                   opacity: 1,
-                  x: 0,
-                  transition: { duration: 2, delay: 1, ease: easeIn },
+                  transition: { duration: 1, delay: 1, ease: easeIn },
                 }}
                 viewport={{ once: true }}
-                className="flex justify-center items-center w-10/12 sm:w-5/12 object-contain mt-5 sm:mx-5"
+                className="flex justify-center items-center w-10/12 sm:w-4/12 object-contain mt-5 sm:mx-5"
                 src={profileImage}
                 alt="Profile Image with Development Icons"
               />
             </div>
           </div>
         </div>
-        <h1 className="flex justify-center items-center text-2xl text-[#C9C9C9] text-center tracking-wide p-5">
+        <h1 className="flex justify-center items-center text-2xl text-[#C9C9C9] text-center tracking-wide">
           My <span className="text-yellow-400">&nbsp; Skillset</span>
         </h1>
         <ul className="grid grid-cols-3 md:grid-cols-6 justify-center items-center gap-8 text-[#C9C9C9] text-sm text-center p-5 m-4">

@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import SendEmail from "../actions/SendEmail";
 import { FaEnvelope } from "react-icons/fa6";
 import contactImage from "../assets/glasses-image.png";
 import yellowOffice from "../assets/yellow-office.png";
@@ -27,7 +28,7 @@ const Contact = () => {
               Let's make a time to{" "}
               <span className="text-yellow-400">chat.</span>
             </h1>
-            <div className="w-full flex px-5 mt-2">
+            <div className="w-full flex justify-center items-center px-5 mt-2">
               <FaEnvelope size={"1.4rem"} color="#C9C9C9" />
               <h6 className="text-[#C9C9C9] text-sm font-nornmal text-start">
                 &nbsp; shanekenzler@gmail.com
@@ -37,59 +38,6 @@ const Contact = () => {
               <br />I am looking for opportunities to join an agile, innovative
               team with a culture that encourages growth and collaboration.
             </p>
-            <form
-              action={async () => {
-                await sendEmail();
-              }}
-              className="w-full flex flex-col justify-center items-start rounded-lg p-5 mt-4"
-            >
-              <label
-                htmlFor="name-feild"
-                className="text-[#C9C9C9] text-start text-sm mb-2"
-              >
-                Name:
-              </label>
-              <input
-                type="text"
-                name="name-feild"
-                id="name-feild"
-                placeholder="name"
-                className="w-60 shadow shadow-black text-sm text-black placeholder-black appearance-none focus:outline-none rounded px-2 py-1 mb-2"
-              ></input>
-              <label
-                htmlFor="email-feild"
-                className="text-[#C9C9C9] text-start text-sm mb-2"
-              >
-                Email:
-              </label>
-              <input
-                type="email"
-                name="email-feild"
-                id="email-feild"
-                placeholder="email"
-                className="w-60 shadow shadow-black text-sm text-black placeholder-black appearance-none focus:outline-none rounded px-2 py-1 mb-2"
-              ></input>
-              <label
-                htmlFor="message-feild"
-                className="text-[#C9C9C9] text-start text-sm mb-2"
-              >
-                Message:
-              </label>
-              <textarea
-                name="message-feild"
-                id="message-feild"
-                placeholder="message"
-                rows="6"
-                className="resize-none w-60 sm:w-72 shadow shadow-black text-sm text-black placeholder-black appearance-none focus:outline-none rounded px-2 py-1 mb-2"
-              ></textarea>
-              <button
-                type="submit"
-                value="submit"
-                className="flex justify-center items-center border-2 border-yellow-400 px-5 py-1 text-yellow-400 text-center text-sm tracking-wide gap-4 font-normal rounded-md my-5 cursor-pointer hover:border-[#C9C9C9] hover:text-[#C9C9C9]"
-              >
-                Let's Chat
-              </button>
-            </form>
           </div>
           <motion.img
             initial={{ opacity: 0 }}
@@ -99,6 +47,7 @@ const Contact = () => {
             src={yellowOffice}
             alt="Phone chat Image"
           />
+          <SendEmail />
         </div>
         <Footer />
       </div>
