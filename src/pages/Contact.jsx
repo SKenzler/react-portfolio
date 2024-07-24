@@ -28,7 +28,7 @@ const Contact = () => {
               Let's make a time to{" "}
               <span className="text-yellow-400">chat.</span>
             </h1>
-            <div className="w-full flex justify-center items-center px-5 mt-2">
+            <div className="w-full flex px-5 mt-2">
               <FaEnvelope size={"1.4rem"} color="#C9C9C9" />
               <h6 className="text-[#C9C9C9] text-sm font-nornmal text-start">
                 &nbsp; shanekenzler@gmail.com
@@ -38,6 +38,7 @@ const Contact = () => {
               <br />I am looking for opportunities to join an agile, innovative
               team with a culture that encourages growth and collaboration.
             </p>
+            <SendEmail />
           </div>
           <motion.img
             initial={{ opacity: 0 }}
@@ -47,7 +48,6 @@ const Contact = () => {
             src={yellowOffice}
             alt="Phone chat Image"
           />
-          <SendEmail />
         </div>
         <Footer />
       </div>

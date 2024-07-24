@@ -34,7 +34,7 @@ const About = () => {
               from Perth, Australia.
             </h1>
             <div className="flex flex-col md:flex-row w-full justify-center items-center mt-5">
-              <p className="w-full sm:w-7/12 text-sm text-[#C9C9C9] font-normal text-pretty tracking-wide p-4">
+              <p className="w-full lg:w-4/12 text-sm text-[#C9C9C9] font-normal text-pretty tracking-wide p-4">
                 I have been a web developer for the last two years. My central
                 focus is building web apps that engage the user and provide them
                 with an impacting user experience. <br />
@@ -51,7 +51,7 @@ const About = () => {
                   transition: { duration: 1, delay: 1, ease: easeIn },
                 }}
                 viewport={{ once: true }}
-                className="flex justify-center items-center w-10/12 sm:w-4/12 object-contain mt-5 sm:mx-5"
+                className="flex justify-center items-center w-10/12 md:w-4/12 object-contain mt-5 sm:mx-24"
                 src={profileImage}
                 alt="Profile Image with Development Icons"
               />

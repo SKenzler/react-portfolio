@@ -1,32 +1,30 @@
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 
-const SendEmail = (e) => {
-  e.preventDefault();
+const SendEmail = () => {
   const form = useRef();
 
-  emailjs
-    .sendForm(
-      "process.env.YOUR_SERVICE_ID",
-      "process.env.YOUR_TEMPLATE_ID",
-      form.current,
-      {
-        publicKey: "process.env.YOUR_PUBLIC_KEY",
-      }
-    )
-    .then(
-      () => {
-        console.log("SUCCESS!");
-      },
-      (error) => {
-        console.log("FAILED...", error.text);
-      }
-    );
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm("service_mw7ji1c", "template_qxbm1cu", form.current, {
+        publicKey: "WXbBuXDeL18gVPTvN",
+      })
+      .then(
+        () => {
+          console.log("SUCCESS!");
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
+  };
 
   return (
     <form
       ref={form}
-      onSubmit={sendEmail}
+      onSubmit={handleSubmit}
       className="w-full flex flex-col justify-center items-start rounded-lg p-5 mt-4"
     >
       <label
