@@ -6,6 +6,7 @@ import { FaEnvelope } from "react-icons/fa6";
 import contactImage from "../assets/glasses-image.png";
 import yellowOffice from "../assets/yellow-office.png";
 import { easeIn, motion } from "framer-motion";
+import Modal from "../components/Modal";
 
 const Contact = () => {
   return (
@@ -23,7 +24,7 @@ const Contact = () => {
           </h1>
         </div>
         <div className="w-full lg:w-9/12 flex flex-col md:flex-row justify-center items-center p-2 mt-10">
-          <div className="w-4/5 flex flex-col px-10">
+          <div className="w-4/5 flex flex-col">
             <h1 className="text-2xl text-[#C9C9C9] text-start font-normal tracking-wide px-5 mt-4">
               Let's make a time to{" "}
               <span className="text-yellow-400">chat.</span>
