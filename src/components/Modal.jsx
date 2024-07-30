@@ -1,17 +1,22 @@
 import { useState } from "react";
-import Logo from "../assets/design-build-deploy-logo.png";
 import { IoClose } from "react-icons/io5";
+import { FaRegCircleCheck } from "react-icons/fa6";
 
 const Modal = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [showModal, setShowModal] = useState(false);
 
   const toggleModal = () => {
-    setIsOpen(!isOpen);
+    setShowModal(!showModal);
+    console.log("close");
   };
 
   return (
-    <div className="w-full h-screen flex justify-center items-center backdrop-blur-sm">
-      <div className="w-[22em] flex flex-col indent-0 bg-[#101824] rounded-lg border-2 border-slate-300 p-3">
+    <div
+      className={
+        'w-screen h-screen flex justify-center items-center inset-0 backdrop-blur-sm" ${showModal ? "visible" : "invisible"}'
+      }
+    >
+      <div className="w-[22em] flex flex-col bg-[#101824] rounded-lg border-2 border-slate-300 p-3">
         <button
           type="button"
           onClick={toggleModal}
@@ -19,16 +24,16 @@ const Modal = () => {
         >
           <IoClose size={"1.2em"} color="#C9C9C9" />
         </button>
-        <div className="flex justify-center items-center gap-1">
-          <img
-            src={Logo}
-            className="w-[4.4em] p-1 m-2 text-"
-            alt="Design Build Deploy Logo"
-          ></img>
-          <div className="text-sm text-[#C9C9C9] text-center font-normal p-2">
-            Your message has been sent
-          </div>
+        <div className="flex justify-center items-center px-5 pb-3">
+          <FaRegCircleCheck size={42} color="#FACC15" />
         </div>
+        <h1 className="text-lg text-center font-semibold text-yellow-400 uppercase">
+          Thank You
+        </h1>
+        <div className="text-sm text-[#C9C9C9] text-center font-normal p-2">
+          Your message has been sent
+        </div>
+
         <div className="flex justify-center items-center">
           <button
             type="button"

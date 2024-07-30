@@ -1,8 +1,11 @@
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import Modal from "../components/Modal";
+import { useState } from "react";
 
 const SendEmail = () => {
   const form = useRef();
+  const [isOpen, setIsOpen] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -14,6 +17,10 @@ const SendEmail = () => {
       .then(
         () => {
           console.log("SUCCESS!");
+          console.log(isOpen);
+          {
+            isOpen && <Modal />;
+          }
         },
         (error) => {
           console.log("FAILED...", error.text);

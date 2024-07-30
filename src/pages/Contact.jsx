@@ -6,7 +6,6 @@ import { FaEnvelope } from "react-icons/fa6";
 import contactImage from "../assets/glasses-image.png";
 import yellowOffice from "../assets/yellow-office.png";
 import { easeIn, motion } from "framer-motion";
-import Modal from "../components/Modal";
 
 const Contact = () => {
   return (
