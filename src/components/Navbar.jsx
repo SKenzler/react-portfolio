@@ -20,16 +20,13 @@ const Navbar = () => {
           <NavLink to="/">
             <div className="flex items-center flex-shrink-0 cursor-pointer">
               <img
-                className="h-16 w-16 mr-3"
+                className="h-[4.2em] w-[4.2em] mr-3"
                 src={logo}
                 alt="Design Build and Deploy Logo"
               />
-              <span className="text-sm text-white tracking-wide">
-                design{" "}
-                <span className="text-yellow-400 font-semibold uppercase">
-                  build
-                </span>{" "}
-                deploy
+              <span className="text-sm text-white font-semibold uppercase tracking-wide">
+                Design <span className="text-yellow-400 font-black">build</span>{" "}
+                Deploy
               </span>
             </div>
           </NavLink>
@@ -103,9 +100,9 @@ const Navbar = () => {
           <div className="lg:hidden md:flex flex-col justify-end">
             <button type="button" onClick={toggleHamburger}>
               {mobileMenuOpen ? (
-                <FaXmark size={24} color="white" />
+                <FaXmark size={28} color="#FACC15" />
               ) : (
-                <FaBars size={24} color="white" />
+                <FaBars size={28} color="#FACC15" />
               )}
             </button>
           </div>

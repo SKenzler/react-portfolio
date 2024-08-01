@@ -1,5 +1,6 @@
 import React from "react";
 import heroImage from "../assets/hero-image.png";
+import logo from "../assets/design-build-deploy-logo.png";
 import { FaGithub } from "react-icons/fa";
 import { easeIn, easeInOut, motion } from "framer-motion";
 import Navbar from "../components/Navbar";
@@ -23,11 +24,19 @@ const Home = () => {
               Frontend <span className="font-black uppercase">Developer</span>
             </h1>
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-normal uppercase p-2">
-              Shane <span className="text-yellow-400 font-bold">Kenzler</span>
+              Shane <span className="text-[#C9C9C9] font-black">Kenzler</span>
             </h2>
+            <img
+              className="h-[6.4em] w-[6.4em] m-2"
+              src={logo}
+              alt="Design Build and Deploy Logo"
+            />
             <p className="w-11/12 sm:w-8/12 text-sm sm:text-base text-[#C9C9C9] font-light tracking-wide p-2">
-              I design, build and deploy responsive web apps using React JS,
-              Tailwind CSS and Framer Motion
+              I{" "}
+              <span className="font-semibold italic">
+                design, build and deploy
+              </span>{" "}
+              responsive web apps using React JS, Tailwind CSS and Framer Motion
             </p>
             <Link to="https://github.com/SKenzler" target="_blank">
               <button

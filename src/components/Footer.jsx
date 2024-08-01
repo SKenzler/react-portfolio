@@ -10,7 +10,7 @@ const Footer = () => {
       <div className="flex justify-center items-center gap-4 sm:gap-10 m-2">
         <Link to="https://github.com/SKenzler" target="_blank">
           <div className="hover:scale-125 cursor-pointer px-2">
-            <FaGithub size={28} color="#C9C9C9" />
+            <FaGithub size={28} color="#FACC15" />
           </div>
         </Link>
         <Link
@@ -18,21 +18,16 @@ const Footer = () => {
           target="_blank"
         >
           <div className="hover:scale-125 cursor-pointer px-2">
-            <BsLinkedin size={28} color="#C9C9C9" />
+            <BsLinkedin size={28} color="#FACC15" />
           </div>
         </Link>
         <Link to="https://codepen.io/skenzler" target="_blank">
           <div className="hover:scale-125 cursor-pointer px-2">
-            <FaCodepen size={28} color="#C9C9C9" />
+            <FaCodepen size={28} color="#FACC15" />
           </div>
         </Link>
       </div>
       <div className="w-full flex justify-center items-center tracking-wide m-4">
-        <img
-          className="h-10 w-10 mr-3"
-          src={logo}
-          alt="Design Build and Deploy Logo"
-        />
         <p className="text-xs text-white text-center tracking-wide">
           &copy; 2024 Design Build Deploy - Shane Kenzler{" "}
           <span className="font-extralight">
