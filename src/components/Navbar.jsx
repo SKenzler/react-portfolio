@@ -159,20 +159,6 @@ const Navbar = () => {
                 </NavLink>
               </li>
             </ul>
-            <Link
-              to={resume}
-              download="Resume_Jan_2024"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <button
-                type="button"
-                className="bg-yellow-400 flex px-5 py-2 text-center gap-2 font-bold rounded-md cursor-pointer hover:bg-[#C9C9C9]"
-              >
-                <FaDownload size={14} />
-                Download CV
-              </button>
-            </Link>
           </div>
         )}
       </div>

@@ -1,11 +1,12 @@
 import React from "react";
 import heroImage from "../assets/hero-image.png";
 import logo from "../assets/design-build-deploy-logo.png";
-import { FaGithub } from "react-icons/fa";
+import { FaDownload, FaGithub } from "react-icons/fa";
 import { easeIn, easeInOut, motion } from "framer-motion";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
+import resume from "../assets/resume-jan-2024.pdf";
 
 const Home = () => {
   return (
@@ -38,16 +39,21 @@ const Home = () => {
               </span>{" "}
               responsive web apps using React JS, Tailwind CSS and Framer Motion
             </p>
-            <Link to="https://github.com/SKenzler" target="_blank">
-              <button
-                type="button"
-                className="w-[18em] flex justify-between items-center border-2 border-yellow-400 px-8 py-2 text-yellow-400 text-center text-base tracking-wide gap-4 font-normal rounded-md mt-5 cursor-pointer hover:border-[#C9C9C9] hover:text-[#C9C9C9]"
-              >
-                <FaGithub size={25} />
-                Check out my Github
-              </button>
-            </Link>
           </motion.div>
+          <Link
+            to={resume}
+            download="Resume_Jan_2024"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <button
+              type="button"
+              className="bg-yellow-400 flex px-5 py-2 text-center gap-2 font-bold rounded-md cursor-pointer hover:bg-[#C9C9C9]"
+            >
+              <FaDownload size={14} />
+              Download CV
+            </button>
+          </Link>
           <motion.img
             initial={{ opacity: 0, x: 100 }}
             whileInView={{

@@ -2,6 +2,8 @@ import React from "react";
 import { easeIn, motion } from "framer-motion";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import { Link } from "react-router-dom";
+import { FaGithub } from "react-icons/fa";
 import contactImage from "../assets/glasses-image.png";
 import profileImage from "../assets/portfolio-image.png";
 import aboutDesign from "../assets/about-page-design.png";
@@ -77,7 +79,15 @@ const About = () => {
             </motion.li>
           ))}
         </ul>
-
+        <Link to="https://github.com/SKenzler" target="_blank">
+          <button
+            type="button"
+            className="w-[18em] flex justify-between items-center border-2 border-yellow-400 px-8 py-2 text-yellow-400 text-center text-base tracking-wide gap-4 font-normal rounded-md mt-5 cursor-pointer hover:border-[#C9C9C9] hover:text-[#C9C9C9]"
+          >
+            <FaGithub size={25} />
+            Check out my Github
+          </button>
+        </Link>
         <h1 className="w-4/6 text-2xl text-[#C9C9C9] text-center font-normal mt-10">
           My <span className="text-yellow-400">Development</span> Process
         </h1>
@@ -99,6 +109,7 @@ const About = () => {
                 alt="Portfolio Landing Pages with Figma logo"
               />
             </motion.div>
+
             <h1 className="text-2xl text-yellow-400 text-center uppercase font-semibold py-2">
               Design
             </h1>
