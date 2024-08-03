@@ -67,7 +67,7 @@ const About = () => {
           {skills.map((item) => (
             <motion.li
               key={item.id}
-              className="flex flex-col w-[6em] h-[6em] justify-center items-center rounded-lg text-[#C9C9C9] font-semibold hover:scale-90 p-2"
+              className="flex flex-col w-[6em] h-[6em] justify-center items-center rounded-lg text-[#C9C9C9] font-normal hover:scale-90 gap-2 m-2"
               initial={{ opacity: 0 }}
               whileInView={{
                 opacity: 1,

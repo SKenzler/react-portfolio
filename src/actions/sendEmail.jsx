@@ -18,7 +18,6 @@ const SendEmail = () => {
         () => {
           console.log("SUCCESS!");
           setModalOpen(true);
-          console.log(modalOpen);
         },
         (error) => {
           console.log("FAILED...", error.text);
