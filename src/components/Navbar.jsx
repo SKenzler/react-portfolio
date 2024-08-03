@@ -66,7 +66,7 @@ const Navbar = () => {
                 Projects
               </NavLink>
             </li>
-            <li className="px-2">
+            <li className="px-2 hover:text-yellow-400">
               <NavLink
                 to="/contact"
                 className={({ isActive }) => {
@@ -79,21 +79,23 @@ const Navbar = () => {
               </NavLink>
             </li>
           </ul>
-          <TimeDisplay />
-          <div className="lg:hidden md:flex flex-col justify-end">
-            <button type="button" onClick={toggleHamburger}>
-              {mobileMenuOpen ? (
-                <FaXmark size={28} color="#FACC15" />
-              ) : (
-                <FaBars size={28} color="#FACC15" />
-              )}
-            </button>
+          <div className="flex justify-center items-center">
+            <TimeDisplay />
+            <div className="lg:hidden md:flex flex-col justify-end">
+              <button type="button" onClick={toggleHamburger}>
+                {mobileMenuOpen ? (
+                  <FaXmark size={28} color="#FACC15" />
+                ) : (
+                  <FaBars size={28} color="#FACC15" />
+                )}
+              </button>
+            </div>
           </div>
         </div>
         {mobileMenuOpen && (
           <div className="fixed right-0 z-20 bg-neutral-900 w-full p-12 flex flex-col justify-center items-center lg:hidden">
             <ul className="text-sm text-center text-white p-2">
-              <li className="p-2">
+              <li className="p-2 hover:text-yellow-400">
                 <NavLink
                   to="/"
                   className={({ isActive }) => {
@@ -105,7 +107,7 @@ const Navbar = () => {
                   Home
                 </NavLink>
               </li>
-              <li className="p-2">
+              <li className="p-2 hover:text-yellow-400">
                 <NavLink
                   to="/about"
                   className={({ isActive }) => {
@@ -117,7 +119,7 @@ const Navbar = () => {
                   About
                 </NavLink>
               </li>
-              <li className="p-2">
+              <li className="p-2 hover:text-yellow-400">
                 <NavLink
                   to="/projects"
                   className={({ isActive }) => {
@@ -129,7 +131,7 @@ const Navbar = () => {
                   Projects
                 </NavLink>
               </li>
-              <li className="p-2">
+              <li className="p-2 hover:text-yellow-400">
                 <NavLink
                   to="/contact"
                   className={({ isActive }) => {

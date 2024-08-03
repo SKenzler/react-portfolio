@@ -35,8 +35,8 @@ const About = () => {
               I'm a <span className="text-yellow-400">Frontend</span> Developer
               from Perth, Australia.
             </h1>
-            <div className="flex flex-col md:flex-row w-full justify-center items-center mt-5">
-              <p className="w-full lg:w-4/12 text-sm text-[#C9C9C9] font-normal text-pretty tracking-wide p-4">
+            <div className="flex flex-col-reverse lg:flex-row w-full justify-center items-center mt-5">
+              <p className="w-full lg:w-4/12 text-sm text-[#C9C9C9] font-normal text-pretty tracking-wide p-4 mt-5">
                 I have been a web developer for the last two years. My central
                 focus is building web apps that engage the user and provide them
                 with an impacting user experience. <br />
@@ -53,7 +53,7 @@ const About = () => {
                   transition: { duration: 1, delay: 1, ease: easeIn },
                 }}
                 viewport={{ once: true }}
-                className="flex justify-center items-center w-10/12 md:w-4/12 object-contain mt-5 sm:mx-24"
+                className="flex justify-center items-center w-9/12 sm:w-[20em] object-contain rounded-lg mt-5 sm:mx-24"
                 src={profileImage}
                 alt="Profile Image with Development Icons"
               />
@@ -82,7 +82,7 @@ const About = () => {
         <Link to="https://github.com/SKenzler" target="_blank">
           <button
             type="button"
-            className="w-[18em] flex justify-between items-center border-2 border-yellow-400 px-8 py-2 text-yellow-400 text-center text-base tracking-wide gap-4 font-normal rounded-md mt-5 cursor-pointer hover:border-[#C9C9C9] hover:text-[#C9C9C9]"
+            className="w-[18em] flex justify-between items-center border-2 border-yellow-400 px-8 py-2 text-yellow-400 text-center text-base tracking-wide gap-4 font-normal rounded-md cursor-pointer hover:border-[#C9C9C9] hover:text-[#C9C9C9] my-5"
           >
             <FaGithub size={25} />
             Check out my Github
