@@ -3,7 +3,7 @@ import { useState } from "react";
 import logo from "../assets/design-build-deploy-logo.png";
 import resume from "../assets/resume-jan-2024.pdf";
 import { FaBars, FaXmark } from "react-icons/fa6";
-import { FaDownload, FaGithub } from "react-icons/fa";
+import { FaDownload } from "react-icons/fa";
 import { NavLink, Link } from "react-router-dom";
 import TimeDisplay from "../components/TimeDisplay";
 
@@ -24,14 +24,13 @@ const Navbar = () => {
                 src={logo}
                 alt="Design Build and Deploy Logo"
               />
-              <span className="text-sm text-white font-semibold uppercase tracking-wide">
-                Design <span className="text-yellow-400 font-black">build</span>{" "}
-                Deploy
-              </span>
+              <div className="flex flex-col text-sm text-white text-center font-semibold uppercase leading-tight tracking-wide">
+                Design <span className="text-yellow-400">build</span> Deploy
+              </div>
             </div>
           </NavLink>
           <ul className="hidden lg:flex ml-14 space-x-12 text-sm text-[#C9C9C9] cursor-pointer">
-            <li className="px-2">
+            <li className="px-2 hover:text-yellow-400">
               <NavLink
                 to="/"
                 className={({ isActive }) => {
@@ -43,7 +42,7 @@ const Navbar = () => {
                 Home
               </NavLink>
             </li>
-            <li className="px-2">
+            <li className="px-2 hover:text-yellow-400">
               <NavLink
                 to="/about"
                 className={({ isActive }) => {
@@ -55,7 +54,7 @@ const Navbar = () => {
                 About
               </NavLink>
             </li>
-            <li className="px-2">
+            <li className="px-2 hover:text-yellow-400">
               <NavLink
                 to="/projects"
                 className={({ isActive }) => {
@@ -80,23 +79,7 @@ const Navbar = () => {
               </NavLink>
             </li>
           </ul>
-          <div className="hidden w-80 lg:flex justify-center items-center">
-            <Link
-              to={resume}
-              download="Resume_Jan_2024"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <button
-                type="button"
-                className="bg-yellow-400 flex px-5 py-2 text-center gap-2 font-bold rounded-md cursor-pointer hover:bg-[#C9C9C9]"
-              >
-                <FaDownload size={14} />
-                Download CV
-              </button>
-            </Link>
-            <TimeDisplay />
-          </div>
+          <TimeDisplay />
           <div className="lg:hidden md:flex flex-col justify-end">
             <button type="button" onClick={toggleHamburger}>
               {mobileMenuOpen ? (

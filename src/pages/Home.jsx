@@ -1,7 +1,7 @@
 import React from "react";
 import heroImage from "../assets/hero-image.png";
 import logo from "../assets/design-build-deploy-logo.png";
-import { FaDownload, FaGithub } from "react-icons/fa";
+import { FaDownload } from "react-icons/fa";
 import { easeIn, easeInOut, motion } from "framer-motion";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
@@ -28,7 +28,7 @@ const Home = () => {
               Shane <span className="text-[#C9C9C9] font-black">Kenzler</span>
             </h2>
             <img
-              className="h-[6.4em] w-[6.4em] m-2"
+              className="h-[6.4em] w-[6.4em] my-5"
               src={logo}
               alt="Design Build and Deploy Logo"
             />
@@ -39,21 +39,22 @@ const Home = () => {
               </span>{" "}
               responsive web apps using React JS, Tailwind CSS and Framer Motion
             </p>
-          </motion.div>
-          <Link
-            to={resume}
-            download="Resume_Jan_2024"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <button
-              type="button"
-              className="bg-yellow-400 flex px-5 py-2 text-center gap-2 font-bold rounded-md cursor-pointer hover:bg-[#C9C9C9]"
+            <Link
+              to={resume}
+              download="Resume_Jan_2024"
+              target="_blank"
+              rel="noreferrer"
             >
-              <FaDownload size={14} />
-              Download CV
-            </button>
-          </Link>
+              <button
+                type="button"
+                className="bg-yellow-400 flex justify-center items-center text-[#101824] text-center gap-2 font-bold rounded-md cursor-pointer hover:bg-[#C9C9C9]  px-8 py-2 mt-8"
+              >
+                <FaDownload size={14} />
+                Download CV
+              </button>
+            </Link>
+          </motion.div>
+
           <motion.img
             initial={{ opacity: 0, x: 100 }}
             whileInView={{

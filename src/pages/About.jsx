@@ -207,7 +207,7 @@ const About = () => {
               viewport={{ once: true }}
               src={reactLogo}
               className="w-14 m-auto"
-              alt="Raect Logo"
+              alt="React Logo"
             />
           </div>
         </div>
