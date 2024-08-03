@@ -2,16 +2,21 @@ import { useState } from "react";
 import { IoClose } from "react-icons/io5";
 import { FaRegCircleCheck } from "react-icons/fa6";
 
-const Modal = () => {
-  const [showModal, setShowModal] = useState(false);
+const Modal = ({ isOpen }) => {
+  const [showModal, setShowModal] = useState(isOpen);
 
   const toggleModal = () => {
     setShowModal(!showModal);
-    console.log("close");
   };
 
   return (
-    <div className="w-screen h-screen fixed inset-0 flex justify-center items-center bg-black bg-opacity-30 backdrop-blur-sm">
+    <div
+      className={
+        !showModal
+          ? "hidden"
+          : "w-screen h-screen fixed inset-0 flex justify-center items-center bg-black bg-opacity-30 backdrop-blur-sm"
+      }
+    >
       <div className="w-[22em] flex flex-col bg-[#101824] rounded-lg border-2 border-slate-300 p-3">
         <button
           type="button"

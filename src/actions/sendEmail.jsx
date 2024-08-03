@@ -5,7 +5,7 @@ import { useState } from "react";
 
 const SendEmail = () => {
   const form = useRef();
-  const [isOpen, setIsOpen] = useState(false);
+  const [modalOpen, setModalOpen] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -17,10 +17,8 @@ const SendEmail = () => {
       .then(
         () => {
           console.log("SUCCESS!");
-          console.log(isOpen);
-          {
-            isOpen && <Modal />;
-          }
+          setModalOpen(true);
+          console.log(modalOpen);
         },
         (error) => {
           console.log("FAILED...", error.text);
@@ -46,6 +44,7 @@ const SendEmail = () => {
         id="name-feild"
         placeholder="name"
         className="w-60 shadow shadow-black text-sm text-black placeholder-black appearance-none focus:outline-none rounded px-2 py-1 mb-2"
+        required
       ></input>
       <label
         htmlFor="email-feild"
@@ -59,6 +58,7 @@ const SendEmail = () => {
         id="email-feild"
         placeholder="email"
         className="w-60 shadow shadow-black text-sm text-black placeholder-black appearance-none focus:outline-none rounded px-2 py-1 mb-2"
+        required
       ></input>
       <label
         htmlFor="message-feild"
@@ -72,6 +72,7 @@ const SendEmail = () => {
         placeholder="message"
         rows="6"
         className="resize-none w-60 sm:w-72 shadow shadow-black text-sm text-black placeholder-black appearance-none focus:outline-none rounded px-2 py-1 mb-2"
+        required
       ></textarea>
       <button
         type="submit"
@@ -80,6 +81,7 @@ const SendEmail = () => {
       >
         Let's Chat
       </button>
+      {modalOpen && <Modal isOpen={modalOpen} />}
     </form>
   );
 };
