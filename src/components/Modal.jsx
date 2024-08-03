@@ -11,11 +11,7 @@ const Modal = () => {
   };
 
   return (
-    <div
-      className={
-        'w-screen h-screen flex justify-center items-center inset-0 backdrop-blur-sm" ${showModal ? "visible" : "invisible"}'
-      }
-    >
+    <div className="w-screen h-screen fixed inset-0 flex justify-center items-center bg-black bg-opacity-30 backdrop-blur-sm">
       <div className="w-[22em] flex flex-col bg-[#101824] rounded-lg border-2 border-slate-300 p-3">
         <button
           type="button"

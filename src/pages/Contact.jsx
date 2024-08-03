@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import SendEmail from "../actions/SendEmail";
@@ -6,8 +6,10 @@ import { FaEnvelope } from "react-icons/fa6";
 import contactImage from "../assets/glasses-image.png";
 import yellowOffice from "../assets/yellow-office.png";
 import { easeIn, motion } from "framer-motion";
+import Modal from "../components/Modal";
 
 const Contact = () => {
+  const [showModal, setShowModal] = useState(false);
   return (
     <>
       <div className="w-full h-full flex flex-col justify-center items-center">
@@ -50,6 +52,7 @@ const Contact = () => {
           />
         </div>
         <Footer />
+        <Modal />
       </div>
     </>
   );
