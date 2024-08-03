@@ -94,7 +94,7 @@ const ProjectCarousel = ({ images }) => {
 
       <div className="flex absolute translate-y-36 sm:-translate-y-[-210px] text-[#C9C9C9] p-4">
         <div
-          className="hover:text-yellow-400 cursor-pointer"
+          className="text-yellow-400 hover:text-[#C9C9C9] cursor-pointer"
           onClick={handlePrevious}
         >
           <FaCaretLeft size={24} />
@@ -121,7 +121,7 @@ const ProjectCarousel = ({ images }) => {
           )}
         </div>
         <div
-          className="hover:text-yellow-400 cursor-pointer"
+          className="text-yellow-400 hover:text-[#C9C9C9] cursor-pointer"
           onClick={handleNext}
         >
           <FaCaretRight size={24} />

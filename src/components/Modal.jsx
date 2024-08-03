@@ -17,7 +17,7 @@ const Modal = ({ isOpen }) => {
           : "w-screen h-screen fixed inset-0 flex justify-center items-center bg-black bg-opacity-30 backdrop-blur-sm"
       }
     >
-      <div className="w-[22em] flex flex-col bg-[#101824] rounded-lg border-2 border-slate-300 p-3">
+      <div className="w-[18em] flex flex-col bg-[#101824] rounded-lg border-2 border-slate-300 p-3">
         <button
           type="button"
           onClick={toggleModal}
@@ -35,7 +35,7 @@ const Modal = ({ isOpen }) => {
           Your message has been sent
         </div>
 
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center mb-2">
           <button
             type="button"
             onClick={toggleModal}

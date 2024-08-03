@@ -63,11 +63,11 @@ const About = () => {
         <h1 className="flex justify-center items-center text-2xl text-[#C9C9C9] text-center tracking-wide">
           My <span className="text-yellow-400">&nbsp; Skillset</span>
         </h1>
-        <ul className="grid grid-cols-3 md:grid-cols-6 justify-center items-center gap-8 text-[#C9C9C9] text-sm text-center p-5 m-4">
+        <ul className="grid grid-cols-3 md:grid-cols-6 justify-center items-center gap-8 text-[#C9C9C9] text-sm text-center p-5 my-2">
           {skills.map((item) => (
             <motion.li
               key={item.id}
-              className="flex flex-col w-[6em] h-[6em] justify-center items-center rounded-lg text-[#C9C9C9] font-normal hover:scale-90 gap-2 m-2"
+              className="flex flex-col w-[6em] h-[6em] justify-center items-center rounded-lg text-[#C9C9C9] font-normal hover:scale-90 gap-2 my-2"
               initial={{ opacity: 0 }}
               whileInView={{
                 opacity: 1,
@@ -88,7 +88,7 @@ const About = () => {
             Check out my Github
           </button>
         </Link>
-        <h1 className="w-4/6 text-2xl text-[#C9C9C9] text-center font-normal mt-10">
+        <h1 className="w-4/6 text-2xl text-[#C9C9C9] text-center font-normal mt-16">
           My <span className="text-yellow-400">Development</span> Process
         </h1>
         <div className="w-full flex flex-col lg:flex-row justify-center gap-10 items-center p-2 mt-10">
