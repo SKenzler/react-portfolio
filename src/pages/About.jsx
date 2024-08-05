@@ -12,6 +12,9 @@ import aboutDeploy from "../assets/about-page-react.png";
 import reactLogo from "../assets/dev-logo-react.png";
 import figmaLogo from "../assets/dev-logo-figma.png";
 import vscodeLogo from "../assets/dev-logo-vscode.png";
+import pencil from "../assets/logo-pencil.png";
+import hammer from "../assets/logo-hammer.png";
+import rocket from "../assets/logo-rocket.png";
 import skills from "../utilities/skills";
 
 const About = () => {
@@ -120,17 +123,30 @@ const About = () => {
                 to assist in making design decisions.
               </p>
             </div>
-            <motion.img
-              initial={{ opacity: 0 }}
-              whileInView={{
-                opacity: 1,
-                transition: { duration: 2, delay: 1, ease: easeIn },
-              }}
-              viewport={{ once: true }}
-              src={figmaLogo}
-              className="w-14 m-auto"
-              alt="Figma Logo"
-            />
+            <div className="flex justify-center items-center">
+              <motion.img
+                initial={{ opacity: 0 }}
+                whileInView={{
+                  opacity: 1,
+                  transition: { duration: 2, delay: 1, ease: easeIn },
+                }}
+                viewport={{ once: true }}
+                src={pencil}
+                className="w-14"
+                alt="Logo Pencil"
+              />
+              <motion.img
+                initial={{ opacity: 0 }}
+                whileInView={{
+                  opacity: 1,
+                  transition: { duration: 2, delay: 1, ease: easeIn },
+                }}
+                viewport={{ once: true }}
+                src={figmaLogo}
+                className="w-14"
+                alt="Figma Logo"
+              />
+            </div>
           </div>
           <div className="w-72 h-[29em] flex flex-col border-2 border-[#C9C9C9] rounded-lg shadow-lg shadow-black my-10 hover:scale-105">
             <motion.div
@@ -159,17 +175,30 @@ const About = () => {
                 Tailwind CSS is the framework I commonly use for styling.
               </p>
             </div>
-            <motion.img
-              initial={{ opacity: 0 }}
-              whileInView={{
-                opacity: 1,
-                transition: { duration: 2, delay: 1, ease: easeIn },
-              }}
-              viewport={{ once: true }}
-              src={vscodeLogo}
-              className="w-14 m-auto"
-              alt="VS Code Logo"
-            />
+            <div className="flex justify-center items-center">
+              <motion.img
+                initial={{ opacity: 0 }}
+                whileInView={{
+                  opacity: 1,
+                  transition: { duration: 2, delay: 1, ease: easeIn },
+                }}
+                viewport={{ once: true }}
+                src={hammer}
+                className="w-14"
+                alt="Logo Hammer"
+              />
+              <motion.img
+                initial={{ opacity: 0 }}
+                whileInView={{
+                  opacity: 1,
+                  transition: { duration: 2, delay: 1, ease: easeIn },
+                }}
+                viewport={{ once: true }}
+                src={vscodeLogo}
+                className="w-14"
+                alt="VS Code Logo"
+              />
+            </div>
           </div>
           <div className="w-72 h-[29em] flex flex-col border-2 border-[#C9C9C9] rounded-lg shadow-lg shadow-black my-10 hover:scale-105">
             <motion.div
@@ -198,17 +227,30 @@ const About = () => {
                 push request to the remote repositiory.
               </p>
             </div>
-            <motion.img
-              initial={{ opacity: 0 }}
-              whileInView={{
-                opacity: 1,
-                transition: { duration: 2, delay: 1, ease: easeIn },
-              }}
-              viewport={{ once: true }}
-              src={reactLogo}
-              className="w-14 m-auto"
-              alt="React Logo"
-            />
+            <div className="flex justify-center items-center">
+              <motion.img
+                initial={{ opacity: 0 }}
+                whileInView={{
+                  opacity: 1,
+                  transition: { duration: 2, delay: 1, ease: easeIn },
+                }}
+                viewport={{ once: true }}
+                src={rocket}
+                className="w-14"
+                alt="Logo Rocket"
+              />
+              <motion.img
+                initial={{ opacity: 0 }}
+                whileInView={{
+                  opacity: 1,
+                  transition: { duration: 2, delay: 1, ease: easeIn },
+                }}
+                viewport={{ once: true }}
+                src={reactLogo}
+                className="w-14"
+                alt="React Logo"
+              />
+            </div>
           </div>
         </div>
         <Footer />
