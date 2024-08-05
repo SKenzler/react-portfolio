@@ -28,10 +28,10 @@ const Modal = ({ isOpen }) => {
         <div className="flex justify-center items-center px-5 pb-3">
           <FaRegCircleCheck size={42} color="#FACC15" />
         </div>
-        <h1 className="text-lg text-center font-semibold text-yellow-400 uppercase">
+        <h1 className="text-xl text-center font-semibold text-yellow-400 uppercase">
           Thank You
         </h1>
-        <div className="text-sm text-[#C9C9C9] text-center font-normal p-2">
+        <div className="text-base text-[#C9C9C9] text-center font-normal p-2">
           Your message has been sent
         </div>
 
