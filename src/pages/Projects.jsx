@@ -28,7 +28,8 @@ const Projects = () => {
         </h1>
         <div className="w-5/12 text-sm text-[#C9C9C9] text-center font-normal text-pretty mt-8">
           Using a mobile first design approach, I create UI concepts and designs
-          before building even starts. Browse through some of my recent work.
+          in Figma before building even starts. Browse through some of my recent
+          work.
         </div>
         <div className="flex relative w-full justify-center items-center overflow-hidden">
           <ProjectCarousel images={images} />

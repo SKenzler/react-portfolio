@@ -21,7 +21,7 @@ const cards = [
     image: cardImageTwo,
     header: "React Curreny Converter",
     content:
-      "A React app that enables a user to input a monetary value and calaculate the conversion amount by selecting a specific country with an associated currency rate. The rate is fetched from an external API.",
+      "A React app that enables a user to input a monetary value and calculate the conversion amount by selecting a specific country with an associated currency rate. The rate is fetched from an external API.",
     icon: <FaGithub size={42} />,
     path: "https://github.com/SKenzler/react-currency-converter",
   },
@@ -48,7 +48,7 @@ const cards = [
     image: cardImageFive,
     header: "React E-commerce Cards",
     content:
-      "A React App that displays a series of e-commerce cards generated from a data file. The App uses props and the map() function to iterate through an Array of Shoes and render a card for each iteration.",
+      "A React App that displays a series of e-commerce cards generated from a data file. The App uses props and the map function to iterate through an Array of Shoes and render a card for each iteration.",
     icon: <FaGithub size={42} />,
     path: "https://github.com/SKenzler/e-commerce-cards",
   },

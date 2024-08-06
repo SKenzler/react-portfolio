@@ -45,9 +45,9 @@ const About = () => {
                 with an impacting user experience. <br />
                 <br />
                 My approach involves incorporating user interaction and subtle
-                animation to captivate the audience. A Bachelor Degree in
-                Computer Science enables me to apply programming principles
-                toward the completion of personal projects.
+                animation to captivate the audience. Applying programming
+                principles gained from my Bachelor Degree in Computer Science
+                enables me complete personal projects.
               </p>
               <motion.img
                 initial={{ opacity: 0 }}
@@ -116,14 +116,14 @@ const About = () => {
             <h1 className="text-2xl text-yellow-400 text-center uppercase font-semibold py-2">
               Design
             </h1>
-            <div className="w-full flex justify-start items-start text-sm text-[#C9C9C9] text-pretty leading-normal tracking-wide px-4">
+            <div className="w-full flex text-sm text-[#C9C9C9] text-pretty leading-normal tracking-wide px-3">
               <p>
-                Using a mobile first design approach to produce wireframes,
-                components, design layouts, style guides and prototypes in Figma
-                to assist in making design decisions.
+                Using a mobile first design approach, I initially produce mood
+                boards, design layouts, style guides, components, wireframes and
+                prototypes in Figma to assist in making design decisions.
               </p>
             </div>
-            <div className="flex justify-center items-center">
+            <div className="flex justify-center items-center mt-1">
               <motion.img
                 initial={{ opacity: 0 }}
                 whileInView={{
@@ -168,14 +168,14 @@ const About = () => {
             <h1 className="text-2xl text-yellow-400 text-center uppercase font-semibold py-2">
               Build
             </h1>
-            <div className="w-full flex justify-start items-start text-sm text-[#C9C9C9] text-pretty leading-normal tracking-wide px-4">
+            <div className="w-full flex text-sm text-[#C9C9C9] text-pretty leading-normal tracking-wide px-3">
               <p>
-                The building process starts in Visual Studio Code. React JS is
-                my prefered library and Git is implemeted for version control.
-                Tailwind CSS is the framework I commonly use for styling.
+                The building process happens in VS Code. React JS is my prefered
+                library and Git ensures version control. Framer Motion enables
+                animation and Tailwind CSS adds styling.
               </p>
             </div>
-            <div className="flex justify-center items-center">
+            <div className="flex justify-center items-center mt-1">
               <motion.img
                 initial={{ opacity: 0 }}
                 whileInView={{
@@ -220,14 +220,14 @@ const About = () => {
             <h1 className="text-2xl text-yellow-400 text-center uppercase font-semibold py-2">
               Deploy
             </h1>
-            <div className="w-full flex justify-start items-start text-sm text-[#C9C9C9] text-pretty leading-normal tracking-wide px-4">
+            <div className="w-full flex text-sm text-[#C9C9C9] text-pretty leading-normal tracking-wide px-4">
               <p>
-                The final build is then deployed to GitHub pages using Github
-                Actions workflow. The workflow action is triggered with every
-                push request to the remote repositiory.
+                The final build is then tested, debugged and deployed to GitHub
+                pages using Github Actions workflow. The workflow is triggered
+                with every push to the remote repository.
               </p>
             </div>
-            <div className="flex justify-center items-center">
+            <div className="flex justify-center items-center mt-1">
               <motion.img
                 initial={{ opacity: 0 }}
                 whileInView={{
