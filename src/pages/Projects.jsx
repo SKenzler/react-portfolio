@@ -29,7 +29,7 @@ const Projects = () => {
         <div className="w-5/12 text-sm text-[#C9C9C9] text-center font-normal text-pretty mt-8">
           Using a mobile first design approach, I create UI concepts and designs
           in Figma before building even starts. Browse through some of my recent
-          work.
+          creations.
         </div>
         <div className="flex relative w-full justify-center items-center overflow-hidden">
           <ProjectCarousel images={images} />
@@ -38,9 +38,9 @@ const Projects = () => {
           My Personal <span className="text-yellow-400">Projects</span>
         </h1>
         <div className="w-5/12 text-sm text-[#C9C9C9] text-center font-normal text-pretty mt-8">
-          Building projects using the React JS library, I complete personal
-          projects to continiously develop my skills and knowledge base. Hover
-          over these recent builds to reveil an explanation for each.
+          Building with the React JS library, I complete personal projects to
+          continiously develop my skills and knowledge base. Hover over these
+          recent builds to reveil an explanation for each.
         </div>
         <div className="w-full flex justify-center mt-14">
           <FlipCard cards={cards} />

@@ -42,12 +42,12 @@ const About = () => {
               <p className="w-full lg:w-4/12 text-sm text-[#C9C9C9] font-normal text-pretty tracking-wide p-4 mt-5">
                 I have been a web developer for the last two years. My central
                 focus is building web apps that engage the user and provide them
-                with an impacting user experience. <br />
+                with a positive user experience. <br />
                 <br />
-                My approach involves incorporating user interaction and subtle
-                animation to captivate the audience. Applying programming
-                principles gained from my Bachelor Degree in Computer Science
-                enables me complete personal projects.
+                To draw in the audience, my strategy combines user interaction
+                with subdued animation. I finish personal projects by using the
+                programming principles I learnt while earning my Computer
+                Science Bachelor's degree.
               </p>
               <motion.img
                 initial={{ opacity: 0 }}
