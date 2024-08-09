@@ -1,10 +1,8 @@
 import React from "react";
 import { useState } from "react";
 import logo from "../assets/design-build-deploy-logo.png";
-import resume from "../assets/resume-jan-2024.pdf";
 import { FaBars, FaXmark } from "react-icons/fa6";
-import { FaDownload } from "react-icons/fa";
-import { NavLink, Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import TimeDisplay from "../components/TimeDisplay";
 
 const Navbar = () => {

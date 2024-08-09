@@ -6,7 +6,7 @@ import { easeIn, easeInOut, motion } from "framer-motion";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
-import resume from "../assets/resume-jan-2024.pdf";
+import resume from "../assets/resume-aug-2024.pdf";
 
 const Home = () => {
   return (
@@ -41,7 +41,7 @@ const Home = () => {
             </p>
             <Link
               to={resume}
-              download="Resume_Jan_2024"
+              download="resume-aug-2024.pdf"
               target="_blank"
               rel="noreferrer"
             >
