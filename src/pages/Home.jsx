@@ -41,7 +41,7 @@ const Home = () => {
             </p>
             <Link
               to={Resume}
-              download="resume-aug-2024.pdf"
+              download="Kenzler-resume.pdf"
               target="_blank"
               rel="noreferrer"
             >
