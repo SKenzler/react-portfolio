@@ -5,7 +5,6 @@ import { FaDownload } from "react-icons/fa";
 import { easeIn, easeInOut, motion } from "framer-motion";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import { Link } from "react-router-dom";
 import Resume from "../assets/resume-aug-2024.pdf";
 
 const Home = () => {
@@ -39,9 +38,9 @@ const Home = () => {
               </span>{" "}
               responsive web apps using React JS, Tailwind CSS and Framer Motion
             </p>
-            <Link
-              to={Resume}
-              download="Kenzler-resume.pdf"
+            <a
+              href={Resume}
+              download="Kenzler_Resume"
               target="_blank"
               rel="noreferrer"
             >
@@ -52,7 +51,7 @@ const Home = () => {
                 <FaDownload size={14} />
                 Download CV
               </button>
-            </Link>
+            </a>
           </motion.div>
 
           <motion.img
