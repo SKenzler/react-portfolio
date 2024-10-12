@@ -1,10 +1,15 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App.jsx";
+import "./index.css";
+import ReactGA from "react-ga";
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactGA.initialize("G-BEF08EK3TL");
+
+ReactGA.pageview(window.location.pathname + window.location.search);
+
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <App />
-  </React.StrictMode>,
-)
+  </React.StrictMode>
+);
