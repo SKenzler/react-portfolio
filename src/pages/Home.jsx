@@ -1,4 +1,5 @@
 import React from "react";
+import { useEffect } from "react";
 import heroImage from "../assets/hero-image.png";
 import logo from "../assets/design-build-deploy-logo.png";
 import { FaDownload } from "react-icons/fa";
@@ -6,8 +7,13 @@ import { easeIn, easeInOut, motion } from "framer-motion";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Resume from "../assets/resume-aug-2024.pdf";
+import ReactGA from "react-ga";
 
 const Home = () => {
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname);
+  }, []);
+
   return (
     <>
       <Navbar />
