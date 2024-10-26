@@ -16,8 +16,13 @@ import pencil from "../assets/logo-pencil.png";
 import hammer from "../assets/logo-hammer.png";
 import rocket from "../assets/logo-rocket.png";
 import skills from "../utilities/skills";
+import ReactGA from "react-ga";
 
 const About = () => {
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname);
+  }, []);
+
   return (
     <>
       <Navbar />

@@ -6,8 +6,13 @@ import contactImage from "../assets/glasses-image.png";
 import images from "../utilities/images";
 import FlipCard from "../components/FlipCard";
 import cards from "../utilities/cards";
+import ReactGA from "react-ga";
 
 const Projects = () => {
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname);
+  }, []);
+
   return (
     <>
       <div className="w-full h-full flex flex-col justify-center items-center">
