@@ -1,4 +1,5 @@
 import React from "react";
+import { useEffect } from "react";
 import { easeIn, motion } from "framer-motion";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
