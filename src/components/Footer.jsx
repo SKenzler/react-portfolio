@@ -6,11 +6,11 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="flex flex-col justify-center items-center my-10">
+    <div className="flex flex-col justify-start items-center my-10">
       <div className="flex justify-center items-center gap-4 sm:gap-10 m-2">
         <Link to="https://github.com/SKenzler" target="_blank">
           <div className="hover:scale-125 cursor-pointer px-2">
-            <FaGithub size={28} color="#FACC15" />
+            <FaGithub size={21} color="#FACC15" />
           </div>
         </Link>
         <Link
@@ -18,12 +18,12 @@ const Footer = () => {
           target="_blank"
         >
           <div className="hover:scale-125 cursor-pointer px-2">
-            <BsLinkedin size={28} color="#FACC15" />
+            <BsLinkedin size={21} color="#FACC15" />
           </div>
         </Link>
         <Link to="https://codepen.io/skenzler" target="_blank">
           <div className="hover:scale-125 cursor-pointer px-2">
-            <FaCodepen size={28} color="#FACC15" />
+            <FaCodepen size={21} color="#FACC15" />
           </div>
         </Link>
       </div>

@@ -91,7 +91,7 @@ const About = () => {
         <Link to="https://github.com/SKenzler" target="_blank">
           <button
             type="button"
-            className="w-[18em] flex justify-between items-center border-2 border-yellow-400 px-8 py-2 text-yellow-400 text-center text-base tracking-wide gap-4 font-normal rounded-md cursor-pointer hover:border-[#C9C9C9] hover:text-[#C9C9C9] my-5"
+            className="w-[20em] flex justify-between items-center border-2 border-yellow-400 px-8 py-2 text-yellow-400 text-center text-base tracking-wide gap-4 font-normal rounded-md cursor-pointer hover:border-[#C9C9C9] hover:text-[#C9C9C9] my-5"
           >
             <FaGithub size={25} />
             Check out my Github

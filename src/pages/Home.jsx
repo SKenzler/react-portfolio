@@ -17,9 +17,9 @@ const Home = () => {
   return (
     <>
       <Navbar />
-      <div className="w-full h-full flex flex-col justify-center items-center">
+      <div className="w-screen h-screen flex flex-col justify-start items-center">
         {" "}
-        <div className="w-full flex flex-col-reverse md:flex-row justify-center items-center text-center overflow-hidden">
+        <div className="w-full flex flex-col-reverse md:flex-row justify-center items-center text-center">
           <motion.div
             className="w-3/4 sm:w-9/12 flex flex-col justify-center items-center text-[#C9C9C9] p-5"
             initial={{ opacity: 0 }}
@@ -37,12 +37,13 @@ const Home = () => {
               src={logo}
               alt="Design Build and Deploy Logo"
             />
-            <p className="w-11/12 sm:w-8/12 text-sm sm:text-base text-[#C9C9C9] font-light tracking-wide p-2">
+            <p className="w-11/12 md:w-2/4 text-base sm:text-lg text-[#C9C9C9] font-light tracking-wide p-2">
               I{" "}
               <span className="font-semibold italic">
                 design, build and deploy
               </span>{" "}
-              responsive web apps using React JS, Tailwind CSS and Framer Motion
+              responsive web apps using Next.js, React JS, Tailwind CSS and
+              Framer Motion
             </p>
             <a
               href={Resume}
@@ -59,23 +60,24 @@ const Home = () => {
               </button>
             </a>
           </motion.div>
-
-          <motion.img
-            initial={{ opacity: 0, x: 100 }}
-            whileInView={{
-              opacity: 1,
-              x: 0,
-              transition: {
-                duration: 3,
-                delay: 2,
-                ease: easeInOut,
-              },
-            }}
-            viewport={{ once: true }}
-            className="w-full sm:w-6/12 object-fill mt-2"
-            src={heroImage}
-            alt="Profile Hero Image"
-          />
+          <div className="w-full flex justify-center items-center">
+            <motion.img
+              initial={{ opacity: 0, x: 100 }}
+              whileInView={{
+                opacity: 1,
+                x: 0,
+                transition: {
+                  duration: 3,
+                  delay: 2,
+                  ease: easeInOut,
+                },
+              }}
+              viewport={{ once: true }}
+              className="w-4/5 object-fill mt-2"
+              src={heroImage}
+              alt="Profile Hero Image"
+            />
+          </div>
         </div>
         <Footer />
       </div>

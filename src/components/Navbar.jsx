@@ -13,7 +13,7 @@ const Navbar = () => {
 
   return (
     <nav className="sticky w-full top-0 z-50 py-3 backdrop-blur-lg border-b neutral-700/80">
-      <div className="container px-4 mx-auto relative text-sm">
+      <div className="w-full px-8 relative text-sm">
         <div className="flex justify-between items-center">
           <NavLink to="/">
             <div className="flex items-center flex-shrink-0 cursor-pointer">
@@ -27,7 +27,7 @@ const Navbar = () => {
               </div>
             </div>
           </NavLink>
-          <ul className="hidden lg:flex ml-14 space-x-12 text-sm text-[#C9C9C9] cursor-pointer">
+          <ul className="hidden lg:flex space-x-12 text-sm text-[#C9C9C9] cursor-pointer">
             <li className="px-2 hover:text-yellow-400">
               <NavLink
                 to="/"
@@ -78,13 +78,15 @@ const Navbar = () => {
             </li>
           </ul>
           <div className="flex justify-center items-center">
-            <TimeDisplay />
+            <div className="px-2 lg:px-0">
+              <TimeDisplay />
+            </div>
             <div className="lg:hidden md:flex flex-col justify-end">
               <button type="button" onClick={toggleHamburger}>
                 {mobileMenuOpen ? (
-                  <FaXmark size={28} color="#FACC15" />
+                  <FaXmark size={21} color="#FACC15" />
                 ) : (
-                  <FaBars size={28} color="#FACC15" />
+                  <FaBars size={21} color="#FACC15" />
                 )}
               </button>
             </div>
